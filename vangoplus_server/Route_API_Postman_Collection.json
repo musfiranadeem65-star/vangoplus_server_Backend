@@ -1,0 +1,189 @@
+{
+  "info": {
+    "name": "Route API with Route Stops",
+    "description": "Collection for testing Route APIs that now support creating and updating route stops",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Create Route with Route Stops",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Downtown Express Route\",\n  \"status\": \"Active\",\n  \"driverId\": 1,\n  \"description\": \"Main downtown route for morning commute\",\n  \"routeStops\": [\n    {\n      \"stopName\": \"Central Station\",\n      \"arrivalTime\": \"07:00:00\",\n      \"orderIndex\": 1\n    },\n    {\n      \"stopName\": \"Market Square\",\n      \"arrivalTime\": \"07:15:00\",\n      \"orderIndex\": 2\n    },\n    {\n      \"stopName\": \"City Hall\",\n      \"arrivalTime\": \"07:30:00\",\n      \"orderIndex\": 3\n    },\n    {\n      \"stopName\": \"University Campus\",\n      \"arrivalTime\": \"08:00:00\",\n      \"orderIndex\": 4\n    }\n  ]\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/route",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "route"]
+        },
+        "description": "Create a new route with multiple stops"
+      }
+    },
+    {
+      "name": "2. Create Route Without Stops",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Evening Route\",\n  \"status\": \"Active\",\n  \"driverId\": 2,\n  \"description\": \"Evening commute route\",\n  \"routeStops\": []\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/route",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "route"]
+        },
+        "description": "Create route without any stops initially"
+      }
+    },
+    {
+      "name": "3. Get All Routes with Stops",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5000/api/route",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "route"]
+        },
+        "description": "Get all routes with their associated stops (auto-sorted by orderIndex)"
+      }
+    },
+    {
+      "name": "4. Get Route by ID (with Stops)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5000/api/route/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "route", "1"]
+        },
+        "description": "Get a specific route by ID with all its stops"
+      }
+    },
+    {
+      "name": "5. Update Route - Add More Stops",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 1,\n  \"name\": \"Downtown Express Route - Updated\",\n  \"status\": \"Active\",\n  \"driverId\": 1,\n  \"description\": \"Updated main downtown route\",\n  \"routeStops\": [\n    {\n      \"stopName\": \"Central Station\",\n      \"arrivalTime\": \"07:00:00\",\n      \"orderIndex\": 1\n    },\n    {\n      \"stopName\": \"Market Square\",\n      \"arrivalTime\": \"07:15:00\",\n      \"orderIndex\": 2\n    },\n    {\n      \"stopName\": \"New Park Location\",\n      \"arrivalTime\": \"07:45:00\",\n      \"orderIndex\": 3\n    },\n    {\n      \"stopName\": \"City Hall\",\n      \"arrivalTime\": \"08:00:00\",\n      \"orderIndex\": 4\n    },\n    {\n      \"stopName\": \"University Campus\",\n      \"arrivalTime\": \"08:30:00\",\n      \"orderIndex\": 5\n    }\n  ]\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/route/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "route", "1"]
+        },
+        "description": "Update a route and replace all its stops. Old stops are deleted, new stops are created."
+      }
+    },
+    {
+      "name": "6. Update Route - Remove All Stops",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 1,\n  \"name\": \"Downtown Express Route - No Stops\",\n  \"status\": \"Active\",\n  \"driverId\": 1,\n  \"description\": \"Route with no stops\",\n  \"routeStops\": []\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/route/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "route", "1"]
+        },
+        "description": "Update route to have no stops (all stops will be deleted)"
+      }
+    },
+    {
+      "name": "7. Update Route Status",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"status\": \"Inactive\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/route/1/status",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "route", "1", "status"]
+        },
+        "description": "Update only the status of a route. Stops remain unchanged."
+      }
+    },
+    {
+      "name": "8. Delete Route (and its Stops)",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5000/api/route/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "route", "1"]
+        },
+        "description": "Delete a route. All associated route stops are also deleted due to cascade delete."
+      }
+    }
+  ]
+}

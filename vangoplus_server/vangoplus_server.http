@@ -1,0 +1,6 @@
+@vangoplus_server_HostAddress = http://localhost:5223
+
+GET {{vangoplus_server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
