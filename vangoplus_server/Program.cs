@@ -1,12 +1,22 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using vangoplus_server.Infrastructure.Data;
 using vangoplus_server.Application.Interfaces;
 using vangoplus_server.Application.Services;
 using vangoplus_server.Application.Handlers;
+using vangoplus_server.Application.Chat;
 using IRouteHandler = vangoplus_server.Application.Interfaces.IRouteHandler;
 using RouteHandler = vangoplus_server.Application.Handlers.RouteHandler;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Train the chatbot intent model and exit:  dotnet run -- train
+if (args.Contains("train"))
+{
+    var trainingCsv = Path.Combine(builder.Environment.ContentRootPath, "ML", "vango_intents.csv");
+    var modelFile = Path.Combine(builder.Environment.ContentRootPath, "ML", "intent_model.zip");
+    vangoplus_server.ML.ModelTrainer.Train(trainingCsv, modelFile);
+    return;
+}
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -46,6 +56,14 @@ builder.Services.AddScoped<IAlertService, AlertService>();
 builder.Services.AddScoped<IAlertHandler, AlertHandler>();
 builder.Services.AddScoped<IStudentRouteAssignmentService, StudentRouteAssignmentService>();
 builder.Services.AddScoped<IStudentRouteAssignmentHandler, StudentRouteAssignmentHandler>();
+
+// Parent chatbot. The classifier is a SINGLETON because loading the ML.NET model is
+// expensive and must happen once, not on every request.
+builder.Services.AddSingleton<IntentClassifier>();
+builder.Services.AddScoped<IChatContextService, ChatContextService>();
+builder.Services.AddScoped<IAnswerService, AnswerService>();
+builder.Services.AddScoped<IEscalationService, EscalationService>();
+builder.Services.AddScoped<IChatHandler, ChatHandler>();
 
 var app = builder.Build();
 

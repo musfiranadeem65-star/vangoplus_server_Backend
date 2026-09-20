@@ -1,0 +1,2449 @@
+text,intent
+hi,greeting
+hello,greeting
+hey,greeting
+hello ji,greeting
+salam,greeting
+assalamualaikum,greeting
+assalam o alaikum,greeting
+aoa,greeting
+salam bhai,greeting
+hi there,greeting
+good morning,greeting
+good afternoon,greeting
+good evening,greeting
+subah bakhair,greeting
+hey vango,greeting
+hello vango plus,greeting
+hi bot,greeting
+hello assistant,greeting
+hey anyone there,greeting
+koi hai,greeting
+kya haal hai,greeting
+kaise ho,greeting
+how are you,greeting
+hii,greeting
+helloo,greeting
+heyy,greeting
+salaam ji,greeting
+hello sir,greeting
+hello madam,greeting
+hi can you help me,greeting
+jee salam,greeting
+walaikum assalam,greeting
+ji hello,greeting
+hi vango,greeting
+good day,greeting
+hey how is it going,greeting
+salam kaisay hain aap,greeting
+hello mujhe kuch poochna tha,greeting
+hi mujhe ek sawal poochna hai,greeting
+hello there,greeting
+bye,goodbye
+goodbye,goodbye
+see you,goodbye
+see you later,goodbye
+allah hafiz,goodbye
+khuda hafiz,goodbye
+khuda hafiz bhai,goodbye
+ok bye,goodbye
+bye bye,goodbye
+chalo phir milte hain,goodbye
+theek hai allah hafiz,goodbye
+talk to you later,goodbye
+ttyl,goodbye
+good night,goodbye
+shab bakhair,goodbye
+take care,goodbye
+phir baat karte hain,goodbye
+ok bye for now,goodbye
+i am done bye,goodbye
+bas itna hi tha bye,goodbye
+chalta hun,goodbye
+chalti hun,goodbye
+ab main jati hun,goodbye
+that is all goodbye,goodbye
+have a nice day,goodbye
+you too bye,goodbye
+ok thanks bye,goodbye
+alvida,goodbye
+baad mein baat karte hain,goodbye
+ab chalte hain,goodbye
+bye vango,goodbye
+allah hafiz ji,goodbye
+gn,goodbye
+catch you later,goodbye
+milte hain phir,goodbye
+chaliye phir,goodbye
+signing off,goodbye
+bas theek hai bye,goodbye
+ok done khuda hafiz,goodbye
+good night vango,goodbye
+ok allah hafiz,goodbye
+thanks,thanks
+thank you,thanks
+thank you so much,thanks
+thanks a lot,thanks
+thx,thanks
+ty,thanks
+shukriya,thanks
+bohat shukriya,thanks
+shukria,thanks
+bht shukriya,thanks
+jazakallah,thanks
+jazak Allah khair,thanks
+mehrbani,thanks
+meharbani,thanks
+bohat mehrbani,thanks
+thanks bhai,thanks
+thank you very much,thanks
+thanks for your help,thanks
+great thanks,thanks
+ok thanks,thanks
+theek hai shukriya,thanks
+acha shukriya,thanks
+perfect thank you,thanks
+awesome thanks,thanks
+appreciate it,thanks
+much appreciated,thanks
+thanks that helped,thanks
+shukriya mujhe jawab mil gaya,thanks
+bohat acha shukriya,thanks
+thnx,thanks
+thanku,thanks
+thank u,thanks
+bht bht shukriya,thanks
+aap ka bohat shukriya,thanks
+helpful thanks,thanks
+got it thanks,thanks
+samajh agaya shukriya,thanks
+ok samajh gaya thanks,thanks
+very helpful thank you,thanks
+you are the best thanks,thanks
+shukriya ji,thanks
+what can you do,help_capabilities
+help,help_capabilities
+help me,help_capabilities
+i need help,help_capabilities
+how can you help me,help_capabilities
+what can i ask you,help_capabilities
+what do you do,help_capabilities
+kya kar sakte ho,help_capabilities
+aap kya kar sakte hain,help_capabilities
+mujhe madad chahiye,help_capabilities
+madad karo,help_capabilities
+meri madad karein,help_capabilities
+aap meri kis tarah madad kar sakte hain,help_capabilities
+kya kya poocha ja sakta hai,help_capabilities
+tum kya ho,help_capabilities
+who are you,help_capabilities
+aap kaun hain,help_capabilities
+are you a bot,help_capabilities
+kya aap bot hain,help_capabilities
+what questions can i ask,help_capabilities
+show me options,help_capabilities
+menu,help_capabilities
+list of things you can do,help_capabilities
+kis cheez mein help karte ho,help_capabilities
+how does this chatbot work,help_capabilities
+yeh chatbot kaise kaam karta hai,help_capabilities
+can you assist me,help_capabilities
+kya aap meri help kar sakte hain,help_capabilities
+guide me please,help_capabilities
+mujhe guide karein,help_capabilities
+features batao,help_capabilities
+tell me your features,help_capabilities
+what can this assistant do,help_capabilities
+is assistant ka kya kaam hai,help_capabilities
+mujhe samajh nahi aa raha kahan se shuru karun,help_capabilities
+i am confused what to ask,help_capabilities
+help menu,help_capabilities
+options dikhao,help_capabilities
+kin topics par baat kar sakte hain,help_capabilities
+how do i use this chat,help_capabilities
+is chat ko kaise use karun,help_capabilities
+what time is pickup,pickup_time
+when will the van pick up my child,pickup_time
+pickup time,pickup_time
+what is my child's pickup time,pickup_time
+van kab aye gi,pickup_time
+van kab aegi,pickup_time
+pickup kitne baje hoga,pickup_time
+subah van kitne baje aati hai,pickup_time
+bache ko lene van kab ayegi,pickup_time
+morning pickup time batao,pickup_time
+mere bache ka pickup time kya hai,pickup_time
+pickup time kya hai,pickup_time
+kab uthaye ga driver bache ko,pickup_time
+what time does the van come in the morning,pickup_time
+when does the van arrive at my stop,pickup_time
+at what time will van reach my home,pickup_time
+van ghar par kitne baje pohanchti hai,pickup_time
+mera bacha kitne baje pick hoga,pickup_time
+pickup timing,pickup_time
+pick up ka time bata do,pickup_time
+tell me the morning pickup time for Ali,pickup_time
+what time should my son be ready,pickup_time
+bacha kitne baje tayyar rakhna hai,pickup_time
+van subah kab ati hai,pickup_time
+kal pickup kitne baje hai,pickup_time
+tomorrow's pickup time,pickup_time
+aaj pickup kab hai,pickup_time
+today pickup time please,pickup_time
+soban ka pickup time kya hai,pickup_time
+Ali Khan ki van kab ayegi,pickup_time
+what time will they collect my daughter,pickup_time
+meri beti ko van kitne baje lene aayegi,pickup_time
+van ka subah ka time kya hai,pickup_time
+morning van timing,pickup_time
+pickup schedule for my child,pickup_time
+when is the morning van,pickup_time
+kitne baje tak ready rehna hai,pickup_time
+pickup ka waqt,pickup_time
+van ke ane ka time,pickup_time
+what is the pickup time for musfira,pickup_time
+what time is drop off,dropoff_time
+when will my child be dropped home,dropoff_time
+drop off time,dropoff_time
+dropoff time kya hai,dropoff_time
+bacha ghar kitne baje pohanche ga,dropoff_time
+chutti ke baad van kab chale gi,dropoff_time
+afternoon drop time,dropoff_time
+school se van kitne baje nikalti hai,dropoff_time
+what time does the van leave school,dropoff_time
+when will the van drop my son,dropoff_time
+mera bacha ghar kab ayega,dropoff_time
+drop timing batao,dropoff_time
+drop ka time kya hai,dropoff_time
+kitne baje drop hoga bacha,dropoff_time
+what time will my daughter reach home,dropoff_time
+return time of van,dropoff_time
+wapsi ka time kya hai,dropoff_time
+wapsi par van kab aati hai,dropoff_time
+school off ke baad van kab aye gi,dropoff_time
+when does the afternoon van arrive,dropoff_time
+afternoon drop kitne baje hoti hai,dropoff_time
+tell me the drop-off time for Ali,dropoff_time
+soban ka drop off time kya hai,dropoff_time
+kal drop kitne baje hai,dropoff_time
+today's drop time,dropoff_time
+aaj drop ka time kya hai,dropoff_time
+what time will the child be home today,dropoff_time
+bacha aaj kitne baje ghar pohanche ga,dropoff_time
+drop off schedule,dropoff_time
+when is the return trip,dropoff_time
+return trip kab hai,dropoff_time
+ghar wapis kab ayega mera bacha,dropoff_time
+drop-off ka waqt,dropoff_time
+school se ghar drop time,dropoff_time
+at what time do you drop the kids,dropoff_time
+kab drop karte hain bachon ko,dropoff_time
+evening drop time,dropoff_time
+drop time for musfira,dropoff_time
+Talal ka drop time batao,dropoff_time
+chutti ke baad drop kab hoti hai,dropoff_time
+what time is the drop for my son,dropoff_time
+where is the van,van_location
+where is the van right now,van_location
+van kahan hai,van_location
+van abhi kahan hai,van_location
+van kahan pohanchi,van_location
+abhi van kahan par hai,van_location
+track the van,van_location
+track my child's van,van_location
+live location of the van,van_location
+van ki live location,van_location
+van ka live tracking,van_location
+how far is the van,van_location
+van kitni door hai,van_location
+van kitni der mein pohanche gi,van_location
+how long until the van arrives,van_location
+eta of van,van_location
+van ka eta batao,van_location
+is the van on its way,van_location
+kya van nikal chuki hai,van_location
+van nikal gayi,van_location
+has the van left yet,van_location
+van late kyun hai,van_location
+why is the van late,van_location
+van late hai,van_location
+the van is running late,van_location
+van abhi tak nahi ayi,van_location
+van has not arrived yet,van_location
+van abhi tak nahi pohanchi,van_location
+where is the driver right now,van_location
+driver abhi kahan hai,van_location
+show me van on map,van_location
+map par van dikhao,van_location
+live trip tracking,van_location
+van kis stop par hai,van_location
+which stop is the van at,van_location
+van ab kis jagah par hai,van_location
+kya van school pohanch gayi,van_location
+has the van reached school,van_location
+how many minutes till van comes,van_location
+van ko ane mein kitne minute lagenge,van_location
+what is my child's route,route_info
+which route is my son on,route_info
+route kya hai,route_info
+mere bache ka route kaunsa hai,route_info
+route ki details batao,route_info
+route details,route_info
+which route is assigned to Ali,route_info
+Ali Khan ka route kaunsa hai,route_info
+mera bacha kis route par hai,route_info
+show me the route,route_info
+route dikhao,route_info
+how many stops on the route,route_info
+route mein kitne stops hain,route_info
+what are the stops on my route,route_info
+stops ki list batao,route_info
+stop timings,route_info
+stop wise time batao,route_info
+what time does the van reach each stop,route_info
+har stop par van kitne baje pohanchti hai,route_info
+kaun kaun se stops hain,route_info
+which stops does the van cover,route_info
+route ka naam kya hai,route_info
+what is the route name,route_info
+assigned route kya hai,route_info
+soban ka route batao,route_info
+ring road route kya hai,route_info
+tell me about the Hafiz center route,route_info
+hafiz center wala route kis ka hai,route_info
+route schedule,route_info
+transport schedule dikhao,route_info
+meri beti ka route kya hai,route_info
+my daughter's route info,route_info
+which road does the van take,route_info
+van kis raste se jati hai,route_info
+mera stop kaunsa hai,route_info
+what is my stop,route_info
+my child's stop number,route_info
+kitne bache hain is route par,route_info
+how many students on this route,route_info
+route information please,route_info
+is route ka schedule kya hai,route_info
+who is the driver,driver_info
+who is my child's driver,driver_info
+driver kaun hai,driver_info
+mere bache ka driver kaun hai,driver_info
+driver ka naam kya hai,driver_info
+what is the driver's name,driver_info
+tell me about the driver,driver_info
+driver ki details,driver_info
+driver details please,driver_info
+driver info,driver_info
+assigned driver kaun hai,driver_info
+who drives my son's van,driver_info
+van ka driver kaun hai,driver_info
+which driver is assigned to Ali Khan,driver_info
+Ali Khan ka driver kaun hai,driver_info
+driver ka license number,driver_info
+driver license details,driver_info
+is the driver verified,driver_info
+kya driver verified hai,driver_info
+driver ki rating kya hai,driver_info
+driver rating,driver_info
+how experienced is the driver,driver_info
+driver kitna tajurba rakhta hai,driver_info
+driver ka background,driver_info
+driver ki maloomat,driver_info
+soban ka driver kaun hai,driver_info
+who is the driver for ring road route,driver_info
+ring road ka driver kaun hai,driver_info
+driver ka pura naam,driver_info
+van number kya hai,driver_info
+what is the van number,driver_info
+van ki plate number,driver_info
+vehicle details,driver_info
+gaari ki details batao,driver_info
+who will be picking up my child,driver_info
+mere bache ko kaun lene aayega,driver_info
+has the driver changed,driver_info
+kya driver badal gaya hai,driver_info
+new driver kaun hai,driver_info
+driver ki profile dikhao,driver_info
+driver's phone number,driver_info
+driver ka number do,driver_info
+driver ka contact number,driver_info
+how can I call the driver,driver_info
+driver ko call kaise karun,driver_info
+i want to call the driver,driver_info
+mujhe driver se baat karni hai,driver_info
+driver se rabta kaise karun,driver_info
+give me the driver's number,driver_info
+driver ka phone number kya hai,driver_info
+contact number of van driver,driver_info
+number of the driver please,driver_info
+driver ka mobile number,driver_info
+how do I contact the driver,driver_info
+can i talk to the driver,driver_info
+kya main driver se baat kar sakta hun,driver_info
+need driver's contact,driver_info
+driver ka whatsapp number,driver_info
+driver ko message karna hai,driver_info
+call driver,driver_info
+driver ko call karo,driver_info
+van driver ka number chahiye,driver_info
+driver ko phone lagana hai,driver_info
+phone number of Ali Raza,driver_info
+Ali Raza ka number,driver_info
+driver contact info,driver_info
+how do I reach the driver,driver_info
+driver tak kaise pohanchun,driver_info
+driver ka cell number,driver_info
+mera bacha van mein hai driver ka number chahiye,driver_info
+send me the driver's number,driver_info
+driver ka number bhejo,driver_info
+driver ka contact bata do,driver_info
+where can i find driver's phone,driver_info
+driver ka number kahan milega,driver_info
+can I call the van driver directly,driver_info
+kya driver ko direct call kar sakte hain,driver_info
+driver ki call button kahan hai,driver_info
+driver se direct baat karni hai,driver_info
+i need the driver's mobile number,driver_info
+has my child been picked up,child_status
+did my child get picked up,child_status
+mera bacha van mein baith gaya,child_status
+bacha pick ho gaya,child_status
+kya bache ko pick kar liya,child_status
+has my son reached school,child_status
+kya bacha school pohanch gaya,child_status
+did my daughter reach home,child_status
+bacha ghar pohanch gaya,child_status
+has my child been dropped off,child_status
+kya bache ko drop kar diya gaya,child_status
+is my child on the van,child_status
+kya mera bacha van mein hai,child_status
+child status,child_status
+bache ki status batao,child_status
+where is my child right now,child_status
+mera bacha abhi kahan hai,child_status
+today's tracking,child_status
+aaj ka tracking status,child_status
+is Ali on the van,child_status
+Ali van mein hai,child_status
+soban pick hua,child_status
+soban ghar pohanch gaya,child_status
+check my child's status,child_status
+status check karo,child_status
+did Leo get picked up,child_status
+mera beta school pohancha ya nahi,child_status
+meri beti ghar aayi ya nahi,child_status
+is my child safe,child_status
+mera bacha theek hai,child_status
+was my child dropped safely,child_status
+kya bacha safely drop hua,child_status
+pickup confirm hua,child_status
+drop confirm hua,child_status
+did the driver pick up Talal,child_status
+Talal ko pick kiya driver ne,child_status
+bache ka live status,child_status
+waiting status kya hai,child_status
+mere bachon ka aaj ka status,child_status
+status of all my children today,child_status
+has my child boarded the van,child_status
+do i have any alerts,unread_alerts
+any new notifications,unread_alerts
+koi notification aayi hai,unread_alerts
+mere alerts dikhao,unread_alerts
+show my alerts,unread_alerts
+unread alerts,unread_alerts
+unread notifications,unread_alerts
+koi naya alert,unread_alerts
+kya koi naye messages hain,unread_alerts
+any new messages from school,unread_alerts
+school ki taraf se koi message,unread_alerts
+what alerts did i miss,unread_alerts
+mujhse koi alert miss to nahi hua,unread_alerts
+check my notifications,unread_alerts
+notifications check karo,unread_alerts
+any updates today,unread_alerts
+aaj koi update aayi,unread_alerts
+koi announcement hai,unread_alerts
+any announcements,unread_alerts
+any route changes today,unread_alerts
+aaj route mein koi tabdeeli,unread_alerts
+kya aaj van cancel hai,unread_alerts
+is there any van delay alert,unread_alerts
+koi delay alert aya,unread_alerts
+pending alerts,unread_alerts
+recent alerts,unread_alerts
+latest alerts batao,unread_alerts
+mere paas kitne unread alerts hain,unread_alerts
+how many unread notifications do i have,unread_alerts
+notification list,unread_alerts
+alerts list dikhao,unread_alerts
+koi zaroori notice,unread_alerts
+any important notice,unread_alerts
+any notice from admin,unread_alerts
+admin ki taraf se koi notice,unread_alerts
+kya koi sms aya,unread_alerts
+any warnings today,unread_alerts
+naye updates bata do,unread_alerts
+what is new,unread_alerts
+koi nayi khabar,unread_alerts
+what is my subscription status,subscription_status
+subscription status batao,subscription_status
+do i have an active plan,subscription_status
+kya mera plan active hai,subscription_status
+mera plan kab tak valid hai,subscription_status
+when does my plan expire,subscription_status
+plan expiry date,subscription_status
+plan kab expire hoga,subscription_status
+which plan am i on,subscription_status
+main kaunse plan par hun,subscription_status
+meri subscription kya hai,subscription_status
+my current plan,subscription_status
+mera current plan batao,subscription_status
+is my subscription active,subscription_status
+kya subscription chal rahi hai,subscription_status
+subscription active hai ya nahi,subscription_status
+how many days left on my plan,subscription_status
+plan mein kitne din baqi hain,subscription_status
+check my subscription,subscription_status
+meri fee jama hui,subscription_status
+has my fee been paid,subscription_status
+kya meri fee paid hai,subscription_status
+is my payment pending,subscription_status
+payment pending hai kya,subscription_status
+how much fee is due,subscription_status
+meri fee kitni baqi hai,subscription_status
+kitna bill baqi hai,subscription_status
+outstanding balance,subscription_status
+baqaya fee,subscription_status
+any dues on my account,subscription_status
+mere zimme kitni raqam hai,subscription_status
+fee due date,subscription_status
+fee ki last date kya hai,subscription_status
+kab tak fee jama karni hai,subscription_status
+when is my next payment due,subscription_status
+agla payment kab due hai,subscription_status
+did my last payment go through,subscription_status
+meri payment lag gayi,subscription_status
+plan status,subscription_status
+mera plan kaisa chal raha hai,subscription_status
+what are the plan prices,plan_prices
+plan ki price kya hai,plan_prices
+how much does the subscription cost,plan_prices
+subscription kitne ki hai,plan_prices
+monthly fee kitni hai,plan_prices
+what is the monthly fee,plan_prices
+basic plan price,plan_prices
+basic plan kitne ka hai,plan_prices
+standard plan price,plan_prices
+standard plan kitne ka hai,plan_prices
+premium plan kitne ka hai,plan_prices
+premium plan price,plan_prices
+how much is the premium plan,plan_prices
+what is included in the basic plan,plan_prices
+basic plan mein kya kya milta hai,plan_prices
+standard plan mein kya hai,plan_prices
+premium plan ki features,plan_prices
+what is the difference between the plans,plan_prices
+plans mein kya farq hai,plan_prices
+compare plans,plan_prices
+plans compare karo,plan_prices
+which plan is best,plan_prices
+kaunsa plan behtar hai,plan_prices
+which plan should i choose,plan_prices
+mujhe kaunsa plan lena chahiye,plan_prices
+kitne bachon ke liye kaunsa plan hai,plan_prices
+how many children are allowed in standard,plan_prices
+standard plan mein kitne bache,plan_prices
+premium mein kitne bache,plan_prices
+does premium include guardians,plan_prices
+unlimited guardians kis plan mein hai,plan_prices
+plan wise rates batao,plan_prices
+available plans,plan_prices
+kon kon se plans hain,plan_prices
+list all plans,plan_prices
+fee structure,plan_prices
+fee structure kya hai,plan_prices
+rs 3000 wala plan kya hai,plan_prices
+cheapest plan,plan_prices
+sabse sasta plan konsa hai,plan_prices
+van ki fees kitni hai,plan_prices
+transport charges kitne hain,plan_prices
+is there a free trial,free_trial
+free trial hai,free_trial
+kya free trial milta hai,free_trial
+how do i get the free trial,free_trial
+free trial kaise milega,free_trial
+how long is the free trial,free_trial
+free trial kitne din ka hai,free_trial
+free trial kab khatam hoga,free_trial
+when does my free trial end,free_trial
+mera free trial khatam ho gaya,free_trial
+my trial expired,free_trial
+trial expire ho gaya,free_trial
+can i try before paying,free_trial
+paisay dene se pehle try kar sakte hain,free_trial
+trial period kya hai,free_trial
+what is the trial period,free_trial
+any trial offer,free_trial
+trial offer hai kya,free_trial
+is the first month free,free_trial
+pehla mahina free hai,free_trial
+do new users get a free trial,free_trial
+naye parents ko free trial milta hai,free_trial
+free plan hai kya,free_trial
+is there a free plan,free_trial
+extend my free trial,free_trial
+trial extend karo,free_trial
+free trial ke baad kya hoga,free_trial
+what happens after the trial,free_trial
+trial ke baad kitna charge hoga,free_trial
+how much after free trial,free_trial
+trial kitne din baqi hain,free_trial
+days left in trial,free_trial
+free trial mein kya kya milta hai,free_trial
+what do i get in free trial,free_trial
+demo period kitna hai,free_trial
+kya demo available hai,free_trial
+can I use it free for a few days,free_trial
+kuch din free chala sakte hain,free_trial
+free mein try karna hai,free_trial
+i want to try it for free,free_trial
+how do i subscribe,subscribe_or_renew
+subscription kaise lun,subscribe_or_renew
+how to buy a plan,subscribe_or_renew
+plan kaise kharidun,subscribe_or_renew
+how to choose a plan,subscribe_or_renew
+plan kaise select karun,subscribe_or_renew
+i want to subscribe,subscribe_or_renew
+mujhe subscribe karna hai,subscribe_or_renew
+i want to buy the standard plan,subscribe_or_renew
+mujhe standard plan lena hai,subscribe_or_renew
+premium plan kaise lun,subscribe_or_renew
+how do I get the premium plan,subscribe_or_renew
+where do i select a plan,subscribe_or_renew
+plan select karne ka tareeqa,subscribe_or_renew
+how to start a subscription,subscribe_or_renew
+subscription start kaise karun,subscribe_or_renew
+how do i activate a plan,subscribe_or_renew
+plan activate kaise hoga,subscribe_or_renew
+how to enroll in transport,subscribe_or_renew
+transport service kaise shuru karun,subscribe_or_renew
+how to sign up for van service,subscribe_or_renew
+van service kaise lagwani hai,subscribe_or_renew
+how do i register for the transport plan,subscribe_or_renew
+transport plan mein registration kaise karun,subscribe_or_renew
+where is the choose a plan button,subscribe_or_renew
+choose a plan button kahan hai,subscribe_or_renew
+steps to subscribe,subscribe_or_renew
+subscribe karne ke steps batao,subscribe_or_renew
+no active plan what to do,subscribe_or_renew
+meri koi active plan nahi hai ab kya karun,subscribe_or_renew
+dashboard par no active plan likha hai,subscribe_or_renew
+how to start booking trips,subscribe_or_renew
+trips booking kaise shuru karun,subscribe_or_renew
+first time subscription kaise karun,subscribe_or_renew
+new plan lena hai,subscribe_or_renew
+want to take basic plan,subscribe_or_renew
+basic plan lagwana hai,subscribe_or_renew
+subscription lene ka tareeqa,subscribe_or_renew
+how do I upgrade to a higher plan,subscribe_or_renew
+plan upgrade kaise karun,subscribe_or_renew
+how do i renew my plan,subscribe_or_renew
+plan renew kaise karun,subscribe_or_renew
+subscription renew karni hai,subscribe_or_renew
+how to renew subscription,subscribe_or_renew
+renew kaise hoga,subscribe_or_renew
+my plan is expiring how to renew,subscribe_or_renew
+plan khatam hone wala hai renew kaise karun,subscribe_or_renew
+i want to renew,subscribe_or_renew
+mujhe renew karna hai,subscribe_or_renew
+renew my subscription,subscribe_or_renew
+renewal process,subscribe_or_renew
+renewal ka tareeqa kya hai,subscribe_or_renew
+how to extend my subscription,subscribe_or_renew
+subscription extend kaise karun,subscribe_or_renew
+how to pay for next month,subscribe_or_renew
+agle mahine ki fee kaise dun,subscribe_or_renew
+next month ka plan kaise lagega,subscribe_or_renew
+auto renew hai kya,subscribe_or_renew
+is there auto renewal,subscribe_or_renew
+can i turn on auto renew,subscribe_or_renew
+auto renew on kaise karun,subscribe_or_renew
+how to stop auto renewal,subscribe_or_renew
+auto renew band kaise karun,subscribe_or_renew
+where is the renew button,subscribe_or_renew
+renew ka button kahan hai,subscribe_or_renew
+my plan expired what now,subscribe_or_renew
+plan expire ho gaya ab kya karun,subscribe_or_renew
+renew before expiry,subscribe_or_renew
+expiry se pehle renew kar sakta hun,subscribe_or_renew
+can i renew early,subscribe_or_renew
+kya time se pehle renew ho sakta hai,subscribe_or_renew
+renew for 3 months,subscribe_or_renew
+3 mahine ke liye renew karna hai,subscribe_or_renew
+how to renew the same plan,subscribe_or_renew
+wohi plan dobara kaise lun,subscribe_or_renew
+monthly renewal kaise hoti hai,subscribe_or_renew
+how does monthly renewal work,subscribe_or_renew
+plan renew karne par kya hota hai,subscribe_or_renew
+what happens when i renew,subscribe_or_renew
+renew nahi kiya to kya hoga,subscribe_or_renew
+how do i cancel my subscription,cancel_subscription
+subscription cancel kaise karun,cancel_subscription
+i want to cancel my plan,cancel_subscription
+mujhe plan cancel karna hai,cancel_subscription
+cancel my subscription,cancel_subscription
+plan band karna hai,cancel_subscription
+subscription band kaise hogi,cancel_subscription
+stop my plan,cancel_subscription
+how to unsubscribe,cancel_subscription
+unsubscribe kaise karun,cancel_subscription
+i do not want the van service anymore,cancel_subscription
+ab van service nahi chahiye,cancel_subscription
+stop transport for my child,cancel_subscription
+bache ki van service band karwani hai,cancel_subscription
+how to end subscription,cancel_subscription
+subscription khatam karni hai,cancel_subscription
+can i get a refund,cancel_subscription
+refund mil sakta hai,cancel_subscription
+refund policy kya hai,cancel_subscription
+what is the refund policy,cancel_subscription
+how do i get my money back,cancel_subscription
+paisay wapis kaise milenge,cancel_subscription
+refund kaise milega,cancel_subscription
+refund ka process,cancel_subscription
+refund process kitne din ka hai,cancel_subscription
+how long does a refund take,cancel_subscription
+refund kitne din mein aata hai,cancel_subscription
+i want my money back,cancel_subscription
+mujhe apne paise wapis chahiye,cancel_subscription
+cancel and refund,cancel_subscription
+cancel karke refund chahiye,cancel_subscription
+no questions asked refund,cancel_subscription
+kya cancel karne par paise wapis hote hain,cancel_subscription
+will i be charged if i cancel,cancel_subscription
+cancel karne par charge lagega,cancel_subscription
+cancel before month end,cancel_subscription
+mahine ke beech mein cancel kar sakte hain,cancel_subscription
+pause my subscription,cancel_subscription
+subscription pause karni hai,cancel_subscription
+temporary band karna hai,cancel_subscription
+deactivate my plan,cancel_subscription
+how do i pay the fee,how_to_pay_fee
+fee kaise jama karun,how_to_pay_fee
+fee kaise ada karun,how_to_pay_fee
+how to make a payment,how_to_pay_fee
+payment kaise karun,how_to_pay_fee
+where do i pay,how_to_pay_fee
+payment kahan karni hai,how_to_pay_fee
+can i pay with jazzcash,how_to_pay_fee
+jazzcash se payment ho sakti hai,how_to_pay_fee
+easypaisa accepted hai,how_to_pay_fee
+do you accept easypaisa,how_to_pay_fee
+what payment methods are available,how_to_pay_fee
+payment ke kaunse tareeqay hain,how_to_pay_fee
+payment methods kya hain,how_to_pay_fee
+can i pay by card,how_to_pay_fee
+card se payment kar sakte hain,how_to_pay_fee
+bank transfer se pay kar sakta hun,how_to_pay_fee
+can i pay cash to the school,how_to_pay_fee
+cash mein fee de sakte hain,how_to_pay_fee
+how to pay using my wallet,how_to_pay_fee
+wallet se payment kaise karun,how_to_pay_fee
+pay fee button kahan hai,how_to_pay_fee
+pay fee kaise hota hai,how_to_pay_fee
+how to add a payment method,how_to_pay_fee
+payment method kaise add karun,how_to_pay_fee
+how do i change my payment method,how_to_pay_fee
+payment method change karna hai,how_to_pay_fee
+edit jazzcash number,how_to_pay_fee
+jazzcash number kaise badlun,how_to_pay_fee
+is online payment safe,how_to_pay_fee
+kya online payment safe hai,how_to_pay_fee
+payment kaise submit karun,how_to_pay_fee
+how to send payment for my child,how_to_pay_fee
+bache ki fee kaise bharun,how_to_pay_fee
+monthly fee kaise pay karun,how_to_pay_fee
+steps to pay fee,how_to_pay_fee
+fee bharne ka tareeqa,how_to_pay_fee
+payment failed what to do,how_to_pay_fee
+payment fail ho gayi ab kya karun,how_to_pay_fee
+paid but not showing,how_to_pay_fee
+payment ki hai lekin show nahi ho rahi,how_to_pay_fee
+show my payment history,payment_history
+payment history dikhao,payment_history
+my previous payments,payment_history
+meri pichli payments,payment_history
+past transactions,payment_history
+purani payments dikhao,payment_history
+how much have i paid so far,payment_history
+ab tak kitni payment ki hai,payment_history
+i need a receipt,payment_history
+mujhe receipt chahiye,payment_history
+download receipt,payment_history
+receipt download kaise karun,payment_history
+billing history,payment_history
+billing history batao,payment_history
+export my payments,payment_history
+payments export karni hain,payment_history
+export all button,payment_history
+invoice chahiye,payment_history
+send me the invoice,payment_history
+invoice kahan se milegi,payment_history
+last payment details,payment_history
+meri akhri payment kab hui,payment_history
+when did i last pay,payment_history
+last time maine kab pay kiya,payment_history
+did you receive my payment,payment_history
+kya aap ko meri payment mili,payment_history
+payment confirmation,payment_history
+payment confirm hui,payment_history
+transaction history,payment_history
+transaction list dikhao,payment_history
+list of my payments,payment_history
+meri payments ki list,payment_history
+previous month ka bill,payment_history
+last month ki fee ka record,payment_history
+payment record,payment_history
+fee record dikhao,payment_history
+proof of payment,payment_history
+payment ka saboot,payment_history
+statement of account,payment_history
+account statement,payment_history
+receipts for this year,payment_history
+is saal ki tamam payments,payment_history
+how do i add a guardian,how_to_add_guardian
+guardian kaise add karun,how_to_add_guardian
+guardian add karne ka tareeqa,how_to_add_guardian
+how to add someone to pick up my child,how_to_add_guardian
+kisi aur ko bache ko lene ke liye kaise add karun,how_to_add_guardian
+add guardian button kahan hai,how_to_add_guardian
+i want to add a guardian,how_to_add_guardian
+mujhe guardian add karna hai,how_to_add_guardian
+how to authorize another person for pickup,how_to_add_guardian
+pickup ke liye kisi ko authorize kaise karun,how_to_add_guardian
+how can my father pick up my child,how_to_add_guardian
+mere walid bache ko lene aa sakte hain kaise add karun,how_to_add_guardian
+add my mother as guardian,how_to_add_guardian
+meri walida ko guardian banana hai,how_to_add_guardian
+add grandparent,how_to_add_guardian
+dada ko add karna hai,how_to_add_guardian
+how to add an uncle as guardian,how_to_add_guardian
+chacha ko guardian kaise banayein,how_to_add_guardian
+steps to add guardian,how_to_add_guardian
+guardian add karne ke steps,how_to_add_guardian
+add an authorized person,how_to_add_guardian
+authorized person kaise add karun,how_to_add_guardian
+new guardian kaise banaun,how_to_add_guardian
+can i add more than one guardian,how_to_add_guardian
+kya ek se zyada guardian add kar sakte hain,how_to_add_guardian
+how many guardians can I add,how_to_add_guardian
+kitne guardians add ho sakte hain,how_to_add_guardian
+how to add family friend as guardian,how_to_add_guardian
+family friend ko guardian kaise banayein,how_to_add_guardian
+someone else will pick up my child tomorrow,how_to_add_guardian
+kal mera bacha koi aur lene aayega kaise register karun,how_to_add_guardian
+add emergency pickup person,how_to_add_guardian
+emergency contact kaise add karun,how_to_add_guardian
+how to register a guardian,how_to_add_guardian
+guardian register kaise hota hai,how_to_add_guardian
+guardian ka form kahan hai,how_to_add_guardian
+where do i fill the guardian form,how_to_add_guardian
+add guardian for soban,how_to_add_guardian
+soban ke liye guardian add karo,how_to_add_guardian
+is my guardian approved,guardian_info
+guardian approve hua,guardian_info
+guardian ka status kya hai,guardian_info
+what is the status of my guardian request,guardian_info
+meri guardian request ka kya hua,guardian_info
+guardian pending kyun hai,guardian_info
+why is my guardian still pending,guardian_info
+guardian abhi tak approve nahi hua,guardian_info
+guardian not approved yet,guardian_info
+when will my guardian be approved,guardian_info
+guardian kab approve hoga,guardian_info
+how long does guardian approval take,guardian_info
+guardian approval mein kitna time lagta hai,guardian_info
+check guardian approval,guardian_info
+guardian approval check karo,guardian_info
+was my guardian rejected,guardian_info
+kya guardian reject ho gaya,guardian_info
+guardian reject kyun hua,guardian_info
+why was my guardian rejected,guardian_info
+pending review kya matlab hai,guardian_info
+what does pending review mean,guardian_info
+Ahmed khan approve hue,guardian_info
+Ahmed khan ka status kya hai,guardian_info
+AQSA approved hai ya pending,guardian_info
+safina ka status batao,guardian_info
+has saim been approved,guardian_info
+saim approve hua ya nahi,guardian_info
+guardian review status,guardian_info
+guardian ki review ka kya status hai,guardian_info
+admin ne guardian approve kiya,guardian_info
+did admin approve my guardian,guardian_info
+guardian request update,guardian_info
+guardian request ka update do,guardian_info
+update guardian ka matlab kya hai,guardian_info
+why does it say update guardian,guardian_info
+guardian par update guardian kyun likha hai,guardian_info
+guardian verification status,guardian_info
+guardian verify hua,guardian_info
+guardian ki approval kab tak hogi,guardian_info
+has the school reviewed my guardian yet,guardian_info
+what documents are needed for a guardian,guardian_requirements
+guardian ke liye kaunse documents chahiye,guardian_requirements
+do i need to upload CNIC,guardian_requirements
+cnic upload karna zaroori hai,guardian_requirements
+guardian verification requirements,guardian_requirements
+guardian verification ke liye kya chahiye,guardian_requirements
+what is needed to approve a guardian,guardian_requirements
+guardian approve karwane ke liye kya karna hoga,guardian_requirements
+is CNIC mandatory for guardians,guardian_requirements
+kya guardian ka CNIC lazmi hai,guardian_requirements
+what id proof is required,guardian_requirements
+kaunsa id proof chahiye,guardian_requirements
+who can be a guardian,guardian_requirements
+guardian kaun ban sakta hai,guardian_requirements
+can a neighbor be a guardian,guardian_requirements
+kya parosi guardian ban sakta hai,guardian_requirements
+can a friend pick up my child,guardian_requirements
+kya dost bache ko le ja sakta hai,guardian_requirements
+age limit for guardian,guardian_requirements
+guardian ki umar kitni honi chahiye,guardian_requirements
+what relations are allowed,guardian_requirements
+kaunse rishtay allowed hain,guardian_requirements
+why is identity verification needed,guardian_requirements
+guardian verification kyun zaroori hai,guardian_requirements
+how does verification work,guardian_requirements
+verification kaise hoti hai,guardian_requirements
+how long is the verification,guardian_requirements
+verification mein kitna time lagega,guardian_requirements
+24-48 hours kya hai,guardian_requirements
+is it 24 to 48 hours for review,guardian_requirements
+what if my guardian does not have a CNIC,guardian_requirements
+agar guardian ke paas CNIC nahi ho to,guardian_requirements
+can i upload a passport instead,guardian_requirements
+CNIC ki jagah passport chalega,guardian_requirements
+clear picture of CNIC chahiye,guardian_requirements
+CNIC ki photo kaisi honi chahiye,guardian_requirements
+will the guardian need to show ID at pickup,guardian_requirements
+pickup par guardian ko ID dikhani hogi,guardian_requirements
+guardian ko kya kya dena hoga,guardian_requirements
+what info is required to add a guardian,guardian_requirements
+who are my authorized guardians,guardian_info
+mere authorized guardians kaun hain,guardian_info
+list my guardians,guardian_info
+guardians ki list dikhao,guardian_info
+show all guardians,guardian_info
+saare guardians dikhao,guardian_info
+who is allowed to pick up my child,guardian_info
+mere bache ko kaun kaun le ja sakta hai,guardian_info
+who can collect my son,guardian_info
+who is authorized for pickup,guardian_info
+kis kis ko pickup ki ijazat hai,guardian_info
+how many guardians do i have,guardian_info
+mere kitne guardians hain,guardian_info
+approved guardians kaun se hain,guardian_info
+approved guardians list,guardian_info
+guardian ki details dikhao,guardian_info
+guardian phone numbers,guardian_info
+guardians ke numbers dikhao,guardian_info
+who did i add as a guardian,guardian_info
+maine kis kis ko guardian banaya tha,guardian_info
+my registered guardians,guardian_info
+registered guardians ki list,guardian_info
+guardians for soban,guardian_info
+soban ke guardians kaun hain,guardian_info
+is safina a guardian,guardian_info
+kya safina guardian hai,guardian_info
+is saim on my list,guardian_info
+saim meri list mein hai,guardian_info
+show my authorized pickup people,guardian_info
+authorized log kaun hain,guardian_info
+current guardians,guardian_info
+abhi kaun kaun guardian hain,guardian_info
+authorized guardians page,guardian_info
+guardians page kahan hai,guardian_info
+view guardians,guardian_info
+guardian dekhna hai,guardian_info
+how many people can pick up my child,guardian_info
+kitne log bache ko le ja sakte hain,guardian_info
+who else can pick up my kid,guardian_info
+mere alawa bache ko kaun le ja sakta hai,guardian_info
+show me everyone linked to my child,guardian_info
+bache se linked tamam log dikhao,guardian_info
+how do i add a child,how_to_add_child
+bacha kaise add karun,how_to_add_child
+add child button kahan hai,how_to_add_child
+i want to add my second child,how_to_add_child
+dusra bacha add karna hai,how_to_add_child
+how to register my child for transport,how_to_add_child
+bache ko transport mein register kaise karun,how_to_add_child
+how to add a new student,how_to_add_child
+naya student kaise add karun,how_to_add_child
+add another child,how_to_add_child
+aik aur bacha add karna hai,how_to_add_child
+register my daughter,how_to_add_child
+meri beti ko register karna hai,how_to_add_child
+add my son to the van service,how_to_add_child
+beta van service mein add karna hai,how_to_add_child
+how many children can i add,how_to_add_child
+kitne bache add kar sakta hun,how_to_add_child
+child limit kya hai,how_to_add_child
+is there a limit on children,how_to_add_child
+steps to add a child,how_to_add_child
+bacha add karne ke steps,how_to_add_child
+what details are required to add a child,how_to_add_child
+bache ko add karne ke liye kya info chahiye,how_to_add_child
+add child form,how_to_add_child
+child ka form kahan hai,how_to_add_child
+how to enroll my kid,how_to_add_child
+bache ka enrollment kaise hoga,how_to_add_child
+new admission for van,how_to_add_child
+van ke liye naya admission,how_to_add_child
+how do i add a sibling,how_to_add_child
+behn bhai ko kaise add karun,how_to_add_child
+my child is not listed how do i add,how_to_add_child
+mera bacha list mein nahi hai add kaise karun,how_to_add_child
+can I add 3 children,how_to_add_child
+3 bache add ho sakte hain,how_to_add_child
+children used ka matlab kya hai,how_to_add_child
+how to add grade and class,how_to_add_child
+grade aur class kaise likhun,how_to_add_child
+add student details,how_to_add_child
+student details kaise bharun,how_to_add_child
+how do i register a new child,how_to_add_child
+naya bacha register karna hai,how_to_add_child
+my child will be absent today,report_absence
+aaj mera bacha absent hai,report_absence
+report absence,report_absence
+absence report karni hai,report_absence
+how do i report absence,report_absence
+absence kaise report karun,report_absence
+my son is sick today,report_absence
+beta aaj bimar hai,report_absence
+my daughter will not go to school tomorrow,report_absence
+kal beti school nahi jaye gi,report_absence
+bacha aaj school nahi jaye ga,report_absence
+tell the driver not to come,report_absence
+driver ko bata do aaj na aaye,report_absence
+skip pickup today,report_absence
+aaj pickup nahi chahiye,report_absence
+cancel today's pickup,report_absence
+aaj ki pickup cancel karo,report_absence
+cancel tomorrow's van,report_absence
+kal van cancel karni hai,report_absence
+mark my child absent,report_absence
+bache ko absent mark karo,report_absence
+leave application for transport,report_absence
+chutti ka batana hai,report_absence
+child is on leave,report_absence
+bacha chutti par hai,report_absence
+no van needed tomorrow,report_absence
+kal van ki zaroorat nahi,report_absence
+we are traveling no pickup this week,report_absence
+hum bahar ja rahe hain is hafte pickup nahi chahiye,report_absence
+report absence for today,report_absence
+absence for tomorrow,report_absence
+soban aaj absent hai,report_absence
+Ali Khan will not come tomorrow,report_absence
+Ali kal nahi ayega,report_absence
+bacha bukhar ki wajah se nahi ayega,report_absence
+my child has a doctor appointment no van,report_absence
+doctor ke paas jana hai van nahi chahiye,report_absence
+inform absence to driver,report_absence
+driver ko absence ki ittela do,report_absence
+absent kaise mark karte hain,report_absence
+how to mark absent,report_absence
+why is no route assigned to my child,route_info
+mere bache ko route kyun nahi mila,route_info
+no route assigned,route_info
+route assign nahi hua,route_info
+it says no route assigned,route_info
+no route assigned likha hua hai,route_info
+when will a route be assigned,route_info
+route kab assign hoga,route_info
+why is my child pending,route_info
+mera bacha pending kyun hai,route_info
+child status pending kya matlab,route_info
+what does pending mean for my child,route_info
+pending status kab tak rahega,route_info
+how long will it stay pending,route_info
+bache ki approval kab hogi,route_info
+when will my child be approved,route_info
+child approval pending,route_info
+admin ne bacha approve kyun nahi kiya,route_info
+why has the admin not approved my child,route_info
+student inactive kyun hai,route_info
+why is my child inactive,route_info
+bacha inactive dikha raha hai,route_info
+how to activate my child,route_info
+bache ko active kaise karun,route_info
+Ali Khan ka route assign nahi hua,route_info
+musfira ka route kab milega,route_info
+test student ko route nahi mila,route_info
+Talal ko route kyun nahi diya gaya,route_info
+my child has been waiting for a route,route_info
+bache ka route abhi tak nahi aaya,route_info
+no driver assigned yet,route_info
+driver assign nahi hua abhi tak,route_info
+who assigns the route,route_info
+route kaun assign karta hai,route_info
+how to get a route for my child,route_info
+bache ke liye route kaise milega,route_info
+route request pending,route_info
+route ki request pending hai,route_info
+my kid has no pickup time,route_info
+bache ka pickup time nahi dikh raha,route_info
+why are pickup times missing,route_info
+pickup time show kyun nahi ho raha,route_info
+i want to change my child's route,change_route_request
+bache ka route change karna hai,change_route_request
+how do i change the route,change_route_request
+route kaise badlun,change_route_request
+change pickup location,change_route_request
+pickup location badalni hai,change_route_request
+we moved to a new address,change_route_request
+hum naye ghar mein shift ho gaye hain,change_route_request
+address change karna hai,change_route_request
+how to update home address,change_route_request
+ghar ka address kaise update karun,change_route_request
+change my stop,change_route_request
+stop badalna hai,change_route_request
+i want a different pickup stop,change_route_request
+mujhe dusra pickup stop chahiye,change_route_request
+can i change pickup time,change_route_request
+pickup time badal sakte hain,change_route_request
+change drop off time,change_route_request
+drop ka time change karwana hai,change_route_request
+request a route change,change_route_request
+route change ki request dena hai,change_route_request
+move my child to another route,change_route_request
+bache ko dusre route par shift karo,change_route_request
+switch to ring road route,change_route_request
+ring road route par shift karna hai,change_route_request
+change to Hafiz center route,change_route_request
+hafiz center route mein transfer karo,change_route_request
+can my child use a different van,change_route_request
+kya bacha dusri van mein ja sakta hai,change_route_request
+can I change the driver,change_route_request
+driver change ho sakta hai,change_route_request
+temporary route change for a week,change_route_request
+ek hafte ke liye route change karna hai,change_route_request
+my stop is far from home can it be changed,change_route_request
+stop ghar se door hai badal sakte hain,change_route_request
+add a new stop,change_route_request
+naya stop add karwana hai,change_route_request
+pick up from grandmother's house,change_route_request
+nani ke ghar se pickup karwani hai,change_route_request
+drop at a different address today,change_route_request
+aaj drop kisi aur address par karwana hai,change_route_request
+how do i change my password,change_password
+password kaise change karun,change_password
+i forgot my password,change_password
+password bhool gaya,change_password
+mera password yaad nahi,change_password
+forgot password,change_password
+reset my password,change_password
+password reset karna hai,change_password
+password reset kaise hoga,change_password
+how to reset password,change_password
+cannot log in forgot password,change_password
+login nahi ho raha password bhool gaya,change_password
+change password option kahan hai,change_password
+password badalne ka option kahan hai,change_password
+where is the change password page,change_password
+update my password,change_password
+password update karna hai,change_password
+i want a new password,change_password
+naya password set karna hai,change_password
+my password is not working,change_password
+mera password kaam nahi kar raha,change_password
+wrong password error,change_password
+password galat bata raha hai,change_password
+how to set a new password,change_password
+new password kaise banayein,change_password
+password ko secure kaise karun,change_password
+how to make my account secure,change_password
+account security settings,change_password
+account ki security kaise badhayen,change_password
+current password kya daalna hai,change_password
+current password dena zaroori hai,change_password
+password change karne ke steps,change_password
+steps to change password,change_password
+password kitne characters ka hona chahiye,change_password
+password requirements,change_password
+kya password email par bhej sakte ho,change_password
+send reset link to my email,change_password
+reset link nahi aaya,change_password
+i did not get the password reset email,change_password
+how do i update my profile,update_profile
+profile kaise update karun,update_profile
+change my phone number,update_profile
+phone number badalna hai,update_profile
+mera number change karna hai,update_profile
+update my email address,update_profile
+email address change karna hai,update_profile
+email kaise badlun,update_profile
+change my name,update_profile
+naam change karna hai,update_profile
+mera naam galat likha hai,update_profile
+my name is spelled wrong,update_profile
+where is profile settings,update_profile
+profile settings kahan hain,update_profile
+edit my profile,update_profile
+profile edit karna hai,update_profile
+update contact details,update_profile
+contact details update karni hain,update_profile
+save changes button kahan hai,update_profile
+how to save my profile changes,update_profile
+profile save kaise karun,update_profile
+i changed my number how to update,update_profile
+mera number badal gaya hai update kaise karun,update_profile
+my old number is still showing,update_profile
+purana number show ho raha hai,update_profile
+update parent information,update_profile
+parent ki info update karni hai,update_profile
+change phone number for alerts,update_profile
+alerts ke liye number badalna hai,update_profile
+what phone number do you have for me,update_profile
+meri kaunsi phone number aap ke paas hai,update_profile
+which email is registered,update_profile
+kaunsi email registered hai,update_profile
+can I change my email,update_profile
+kya email change ho sakti hai,update_profile
+how to edit account details,update_profile
+account details edit kaise karun,update_profile
+update my whatsapp number,update_profile
+whatsapp number update karna hai,update_profile
+change my profile picture,update_profile
+profile picture kaise lagayen,update_profile
+turn on sms alerts,notification_settings
+sms alerts on karo,notification_settings
+sms alert enable kaise karun,notification_settings
+how do i enable sms notifications,notification_settings
+turn off sms alerts,notification_settings
+sms alerts band karo,notification_settings
+turn on email alerts,notification_settings
+email alerts on karne hain,notification_settings
+disable email notifications,notification_settings
+email notifications band karni hain,notification_settings
+how to change notification settings,notification_settings
+notification settings kahan hain,notification_settings
+notification preferences,notification_settings
+notification preferences badalni hain,notification_settings
+i do not want so many notifications,notification_settings
+mujhe itni notifications nahi chahiye,notification_settings
+stop sending me emails,notification_settings
+mujhe emails bhejna band karo,notification_settings
+i am not getting sms,notification_settings
+mujhe sms nahi aa rahe,notification_settings
+i am not receiving alerts,notification_settings
+mujhe alerts nahi mil rahe,notification_settings
+i do not get email alerts,notification_settings
+email alerts nahi aa rahe,notification_settings
+how to get pickup alerts,notification_settings
+pickup ke alerts kaise milenge,notification_settings
+how do i get notified when van arrives,notification_settings
+van aane par notification kaise milegi,notification_settings
+enable push notifications,notification_settings
+push notifications on karo,notification_settings
+what alerts will I receive,notification_settings
+mujhe kaunse alerts milenge,notification_settings
+sms alerts kis liye hain,notification_settings
+what are sms alerts for,notification_settings
+email alerts mein kya aata hai,notification_settings
+what do email alerts include,notification_settings
+daily summary email band karo,notification_settings
+stop the daily summary,notification_settings
+route change ke sms chahiye,notification_settings
+mute notifications,notification_settings
+notifications mute karni hain,notification_settings
+how do i contact support,contact_support
+support se rabta kaise karun,contact_support
+contact admin,contact_support
+admin se baat karni hai,contact_support
+i want to talk to a human,contact_support
+mujhe kisi insaan se baat karni hai,contact_support
+customer care number,contact_support
+customer care ka number kya hai,contact_support
+helpline number,contact_support
+helpline number batao,contact_support
+support email,contact_support
+support ki email kya hai,contact_support
+school office number,contact_support
+school office ka number do,contact_support
+how to reach the school,contact_support
+school se kaise rabta karun,contact_support
+who do i call for help,contact_support
+madad ke liye kis ko call karun,contact_support
+transport incharge ka number,contact_support
+transport incharge se baat karni hai,contact_support
+contact the transport manager,contact_support
+manager se rabta,contact_support
+i need to speak to the admin,contact_support
+admin se baat karwa do,contact_support
+give me the admin's contact,contact_support
+admin ka contact number do,contact_support
+contact support button,contact_support
+contact support kahan hai,contact_support
+talk to an agent,contact_support
+agent se baat karwao,contact_support
+live chat with support,contact_support
+support team se live chat,contact_support
+billing support number,contact_support
+billing support se kaise baat karun,contact_support
+can i email the school,contact_support
+school ko email kaise karun,contact_support
+support timings,contact_support
+support kis waqt available hai,contact_support
+office hours,contact_support
+office ka time kya hai,contact_support
+human agent chahiye,contact_support
+connect me to support,contact_support
+i want to complain,complaint
+mujhe shikayat karni hai,complaint
+i have a complaint,complaint
+meri ek shikayat hai,complaint
+the driver was rude,complaint
+driver ka rawaiya bura tha,complaint
+driver behaved badly,complaint
+driver ne badtameezi ki,complaint
+the van is very dirty,complaint
+van bohat ganda hai,complaint
+van is overcrowded,complaint
+van mein bohat zyada bache hain,complaint
+the driver drives recklessly,complaint
+driver bohat tez chalata hai,complaint
+driver was on the phone while driving,complaint
+driver phone par baat karte hue gaari chala raha tha,complaint
+van is always late,complaint
+van hamesha late aati hai,complaint
+service is very bad,complaint
+service bohat kharab hai,complaint
+i am not happy with the service,complaint
+main service se khush nahi hun,complaint
+very disappointed,complaint
+bohat mayoos hun,complaint
+worst transport service,complaint
+yeh sab se kharab service hai,complaint
+my child was left behind,complaint
+mere bache ko chhor kar chale gaye,complaint
+the van skipped my stop,complaint
+van mera stop chhor gayi,complaint
+driver did not pick up my child today,complaint
+driver ne aaj bache ko pick nahi kiya,complaint
+my child came home very late today,complaint
+mera bacha aaj bohat late ghar aaya,complaint
+i was overcharged,complaint
+mujhse zyada paisay liye gaye,complaint
+wrong amount charged,complaint
+galat fee charge ki gayi,complaint
+app is not working properly,complaint
+app theek kaam nahi kar rahi,complaint
+report a problem with the driver,complaint
+driver ke khilaf shikayat,complaint
+emergency,emergency
+this is an emergency,emergency
+yeh emergency hai,emergency
+emergency hai jaldi help karo,emergency
+my child is missing,emergency
+mera bacha gum ho gaya hai,emergency
+my child has not reached home,emergency
+mera bacha abhi tak ghar nahi pohancha,emergency
+there was an accident with the van,emergency
+van ka accident ho gaya,emergency
+van met with an accident,emergency
+van accident mein phans gayi,emergency
+my child is hurt,emergency
+mere bache ko chot lagi hai,emergency
+my child is injured in the van,emergency
+bacha van mein zakhmi ho gaya,emergency
+my child is not answering the phone and has not come home,emergency
+bacha ghar nahi aaya aur phone bhi nahi utha raha,emergency
+the van broke down,emergency
+van kharab ho gayi road par,emergency
+van is stuck and my child is inside,emergency
+van phans gayi hai bacha andar hai,emergency
+my child feels sick in the van,emergency
+bache ki tabiyat van mein kharab ho gayi,emergency
+urgent help needed,emergency
+foran madad chahiye,emergency
+urgent please help,emergency
+please help my child is in danger,emergency
+bache ko khatra hai,emergency
+unknown person picked up my child,emergency
+kisi anjaan shakhs ne bache ko utha liya,emergency
+someone unauthorized took my child,emergency
+kisi ghair mutaliq bande ne bache ko le liya,emergency
+driver is not responding and my child is in the van,emergency
+driver phone nahi utha raha aur bacha van mein hai,emergency
+child was dropped at the wrong place,emergency
+bache ko galat jagah utaar diya,emergency
+my child is lost,emergency
+mera bacha kho gaya hai,emergency
+call the school immediately,emergency
+school ko foran call karo,emergency
+police ko batana hai,emergency
+i need to report a serious incident,emergency
+what is the weather today,out_of_scope
+aaj mausam kaisa hai,out_of_scope
+tell me a joke,out_of_scope
+koi mazahiya baat sunao,out_of_scope
+who won the cricket match,out_of_scope
+cricket ka score kya hai,out_of_scope
+what is the capital of pakistan,out_of_scope
+pakistan ka capital kya hai,out_of_scope
+how to cook biryani,out_of_scope
+biryani kaise banate hain,out_of_scope
+what is the price of petrol,out_of_scope
+petrol ka rate kya hai,out_of_scope
+who is the prime minister,out_of_scope
+what is the dollar rate,out_of_scope
+dollar ka rate kya hai,out_of_scope
+translate this to french,out_of_scope
+mujhe ek poem likh do,out_of_scope
+write me an essay,out_of_scope
+essay likh do,out_of_scope
+what is 25 times 4,out_of_scope
+25 ko 4 se zarb do,out_of_scope
+recommend a movie,out_of_scope
+koi acchi movie batao,out_of_scope
+how do i learn python,out_of_scope
+python kaise seekhun,out_of_scope
+what is your favorite color,out_of_scope
+tumhara favorite colour kya hai,out_of_scope
+are you married,out_of_scope
+kya tum shaadi shuda ho,out_of_scope
+tell me about the moon,out_of_scope
+chand ke baare mein batao,out_of_scope
+how to lose weight,out_of_scope
+wazan kaise kam karun,out_of_scope
+best restaurant near me,out_of_scope
+sab se acha restaurant kahan hai,out_of_scope
+book me a flight,out_of_scope
+mujhe flight book karni hai,out_of_scope
+order me pizza,out_of_scope
+pizza order kar do,out_of_scope
+what is the news today,out_of_scope
+aaj ki khabren kya hain,out_of_scope
+who is elon musk,out_of_scope
+sing me a song,out_of_scope
+koi gana sunao,out_of_scope
+what is the time in london,out_of_scope
+complaint about the driver,complaint
+driver ke baare mein complaint karni hai,complaint
+van roz late aati hai,complaint
+van comes late every day,complaint
+pichle hafte se van late aa rahi hai,complaint
+van has been late all week,complaint
+mujhe is service se bohat shikayat hai,complaint
+this service is a joke,complaint
+yeh kya tareeqa hai bache ko akela chor diya,complaint
+driver bache ke saath sahi se pesh nahi aata,complaint
+driver shouts at my child,complaint
+driver mere bache par chilla raha tha,complaint
+driver ne mere bache ko daanta,complaint
+driver is not polite with kids,complaint
+van mein bohat garmi hai,complaint
+van is too hot and there is no ac,complaint
+van ki seats toot gayi hain,complaint
+seat belts are missing in the van,complaint
+van mein seat belt nahi hain,complaint
+bache van mein khade hote hain,complaint
+too many kids are standing in the van,complaint
+driver overspeeding kar raha tha,complaint
+driver traffic rules follow nahi karta,complaint
+i want to file a complaint against the driver,complaint
+driver ke against complaint darj karwani hai,complaint
+i have complained before and nothing happened,complaint
+pehle bhi shikayat ki thi koi sunwai nahi hui,complaint
+nobody responds to my complaints,complaint
+koi meri baat nahi sunta,complaint
+school ne meri complaint ka koi jawab nahi diya,complaint
+i am fed up with this transport,complaint
+main is transport se tang aa gayi hun,complaint
+bohat bura experience raha aaj,complaint
+very bad experience with the van today,complaint
+driver aaj phir late tha aur bura bartao kiya,complaint
+meri subscription ka kya status hai,subscription_status
+is mahine ki fee jama hai ya nahi,subscription_status
+have i paid this month's fee,subscription_status
+kitne paise dene baqi hain,subscription_status
+how much do i still owe,subscription_status
+mera bill kitna banta hai,subscription_status
+what is my current bill,subscription_status
+meri fee kab due hoti hai,subscription_status
+is my account in good standing,subscription_status
+mera account active hai ya nahi,subscription_status
+kya mera plan expire ho gaya hai,subscription_status
+has my plan expired,subscription_status
+mera plan kis tarikh ko khatam hoga,subscription_status
+what date does my plan end,subscription_status
+kya main abhi subscribed hun,subscription_status
+am i currently subscribed,subscription_status
+mere naam par kaunsa plan chal raha hai,subscription_status
+which plan is running on my account,subscription_status
+main har mahine kitna pay kar raha hun,subscription_status
+subscription details dikhao,subscription_status
+show my subscription details,subscription_status
+do i have any pending payment,subscription_status
+meri koi payment pending to nahi,subscription_status
+kya meri fee late ho gayi hai,subscription_status
+is my fee overdue,subscription_status
+what is the status of my last payment,subscription_status
+meri last payment ka kya status hai,subscription_status
+mere plan ki maiyad kab khatam hogi,subscription_status
+my subscription end date,subscription_status
+mera plan renew hone mein kitne din hain,subscription_status
+basic plan ki fees kya hai,plan_prices
+kitne paise lagte hain van ke,plan_prices
+how much do you charge for transport,plan_prices
+van service ka monthly charge kitna hai,plan_prices
+price list please,plan_prices
+rate list batao,plan_prices
+standard aur premium mein kitna farq hai price ka,plan_prices
+how much more is premium than standard,plan_prices
+premium plan kis liye behtar hai,plan_prices
+what does standard include,plan_prices
+does the basic plan include live tracking,plan_prices
+kya basic plan mein live tracking hai,plan_prices
+premium plan mein kya extra milta hai,plan_prices
+what extra do i get with premium,plan_prices
+round trip kis plan mein hai,plan_prices
+which plan has round trip transport,plan_prices
+morning pickup only plan kaunsa hai,plan_prices
+which plan is only morning pickup,plan_prices
+kaunsa plan 3 bachon ke liye hai,plan_prices
+which plan covers 3 children,plan_prices
+priority support kis plan mein hai,plan_prices
+which plan has 24/7 support,plan_prices
+rs 5000 wale plan mein kya kya hai,plan_prices
+what do i get for 7500,plan_prices
+7500 wala plan kya hai,plan_prices
+per month kitna kharcha aayega,plan_prices
+what will it cost per month for two children,plan_prices
+do you offer discounts for siblings,plan_prices
+sibling discount hai kya,plan_prices
+kya yearly plan bhi hai,plan_prices
+guardian add karne se pehle kya tayyari karni hogi,guardian_requirements
+what do i need before adding a guardian,guardian_requirements
+guardian ke liye kis cheez ki photo upload karni hai,guardian_requirements
+what should i upload for a guardian,guardian_requirements
+guardian ki id ka scan chahiye,guardian_requirements
+do you need a copy of the guardian's ID card,guardian_requirements
+kya guardian ki id card copy deni hogi,guardian_requirements
+is the CNIC copy required,guardian_requirements
+cnic front aur back dono chahiye,guardian_requirements
+do i need both sides of the CNIC,guardian_requirements
+guardian approve hone ke liye conditions kya hain,guardian_requirements
+what are the conditions for guardian approval,guardian_requirements
+guardian ke liye rules kya hain,guardian_requirements
+rules for authorized guardians,guardian_requirements
+kya nabalig guardian ban sakta hai,guardian_requirements
+can a minor be a guardian,guardian_requirements
+can a driver or servant be a guardian,guardian_requirements
+kya naukar guardian ban sakta hai,guardian_requirements
+kya guardian ka mere se rishta zaroori hai,guardian_requirements
+must the guardian be a relative,guardian_requirements
+guardian ka phone number zaroori hai,guardian_requirements
+is a phone number required for the guardian,guardian_requirements
+guardian ke liye kitni details deni parti hain,guardian_requirements
+how much information do i need to provide about the guardian,guardian_requirements
+kya guardian ki nadra verification hoti hai,guardian_requirements
+is guardian id verified with nadra,guardian_requirements
+guardian verify karne ka process kya hai,guardian_requirements
+what is the verification process for guardians,guardian_requirements
+mera bacha van se utar kar gum ho gaya,emergency
+bache ka koi pata nahi chal raha,emergency
+i cannot find my child,emergency
+school se bacha ghar nahi aaya abhi tak,emergency
+it is 5 pm and my child is not home,emergency
+driver ka phone band hai aur bacha wapis nahi aaya,emergency
+driver is unreachable and my kid is not home,emergency
+van ne road par takar mar di,emergency
+the van hit a car,emergency
+van ulat gayi hai,emergency
+the van overturned,emergency
+bache ko hospital le jana hai,emergency
+my child needs a hospital,emergency
+bacha behosh ho gaya hai,emergency
+my child fainted in the van,emergency
+bache ka khoon beh raha hai,emergency
+my child is bleeding,emergency
+koi bache ko zabardasti le gaya,emergency
+someone forcibly took my child from the van,emergency
+driver looks drunk and my child is with him,emergency
+driver bache ko galat raste par le ja raha hai,emergency
+the driver is taking my child to the wrong place,emergency
+van school ki jagah kisi aur taraf ja rahi hai,emergency
+the van is going in the wrong direction with my child,emergency
+help my child is trapped in the van,emergency
+bacha van mein band ho gaya hai,emergency
+van mein aag lag gayi,emergency
+the van caught fire,emergency
+mujhe abhi foran help chahiye,emergency
+please call the admin right now my child is in trouble,emergency
+school ki tuition fee kitni hai,out_of_scope
+what is the school tuition fee,out_of_scope
+exam date sheet kab aayegi,out_of_scope
+when is the exam schedule,out_of_scope
+homework kya mila hai aaj,out_of_scope
+what is today's homework,out_of_scope
+teacher se baat karni hai,out_of_scope
+i want to talk to my child's teacher,out_of_scope
+result kab aayega,out_of_scope
+when will the results come out,out_of_scope
+uniform kahan se milegi,out_of_scope
+where can i buy the school uniform,out_of_scope
+gold ka rate kya hai,out_of_scope
+what is the gold price today,out_of_scope
+bitcoin price kya hai,out_of_scope
+mujhe ek recipe batao,out_of_scope
+give me a recipe for pasta,out_of_scope
+sab se behtar cricketer kaun hai,out_of_scope
+who is the best cricketer,out_of_scope
+what is machine learning,out_of_scope
+machine learning kya hoti hai,out_of_scope
+tell me a story,out_of_scope
+mujhe koi kahani sunao,out_of_scope
+how do i get a passport,out_of_scope
+passport kaise banta hai,out_of_scope
+kal barish hogi kya,out_of_scope
+what is 100 divided by 5,out_of_scope
+how to apply for a job,out_of_scope
+job kaise dhoondun,out_of_scope
+what is the meaning of life,out_of_scope
+mera pickup point badalna hai,change_route_request
+i need to change my pickup point,change_route_request
+bache ko naye stop se pickup karwana hai,change_route_request
+i want my child picked up from a new stop,change_route_request
+hum shift ho rahe hain agle mahine route badalna hoga,change_route_request
+we are moving next month and need a new route,change_route_request
+route change karwane ke liye kya karna hoga,change_route_request
+what do i do to get the route changed,change_route_request
+pickup ka time thora late karwana hai,change_route_request
+can pickup be a bit later,change_route_request
+pickup ka time pehle karwana hai,change_route_request
+can you make the pickup earlier,change_route_request
+drop off ek ghante baad karwani hai,change_route_request
+can drop off be moved later,change_route_request
+hamara ghar route se bahar hai stop badlo,change_route_request
+my house is not on the route please add it,change_route_request
+bache ko cousin ke ghar se drop karwana hai,change_route_request
+drop my child at my sister's house,change_route_request
+kal ke liye alag jagah se pickup,change_route_request
+pickup from a different place tomorrow,change_route_request
+switch my child to another van,change_route_request
+bache ko doosri van mein daal do,change_route_request
+transfer soban to another route,change_route_request
+soban ko dusre route par transfer karo,change_route_request
+mujhe route badalne ki request bhejni hai,change_route_request
+send a route change request to the admin,change_route_request
+admin se route change karwana hai,change_route_request
+i want to update my child's pickup address,change_route_request
+bache ka pickup address update karna hai,change_route_request
+change the stop for Ali Khan,change_route_request
+Ali Khan ka stop badal do,change_route_request
+kya bacha van se utar gaya,child_status
+has my child got off the van,child_status
+bache ne van pakar li,child_status
+did my son catch the van this morning,child_status
+kya aaj bacha van par chadha,child_status
+did my kid miss the van today,child_status
+bacha van miss to nahi kar gaya,child_status
+has the driver dropped my daughter,child_status
+driver ne meri beti ko drop kar diya,child_status
+is my son still in the van,child_status
+mera beta abhi tak van mein hai,child_status
+bacha school gate tak pohancha ya nahi,child_status
+did my child enter the school,child_status
+bacha school ke andar gaya,child_status
+confirm my child reached school safely,child_status
+bache ke safely school pohanchne ki confirmation chahiye,child_status
+i want to know if my child got home,child_status
+mujhe bata do bacha ghar aa gaya ya nahi,child_status
+aaj ki pickup ho gayi,child_status
+was pickup done today,child_status
+aaj ki drop ho chuki hai,child_status
+has today's drop been completed,child_status
+mera bacha waiting par hai ya pick ho gaya,child_status
+is my child waiting or picked up,child_status
+Ali Khan ki aaj ki pickup hui,child_status
+was soban dropped today,child_status
+kya soban ko aaj drop kiya gaya,child_status
+what is the current trip status of my child,child_status
+mere bache ki trip ka status kya hai,child_status
+what all can you help me with,help_capabilities
+aap kin cheezon mein madad karte hain,help_capabilities
+can you answer my questions about the van,help_capabilities
+kya aap van ke baare mein sawalon ke jawab de sakte hain,help_capabilities
+tell me what you know,help_capabilities
+aap ko kya kya maloom hai,help_capabilities
+what topics do you cover,help_capabilities
+aap kin topics par jawab dete ho,help_capabilities
+how can this bot be useful,help_capabilities
+yeh bot mere kis kaam ka hai,help_capabilities
+i do not know what to ask,help_capabilities
+mujhe nahi pata kya poochna hai,help_capabilities
+show me what i can ask,help_capabilities
+mujhe dikhao main kya pooch sakta hun,help_capabilities
+are you an ai,help_capabilities
+kya aap ai hain,help_capabilities
+what is this assistant for,help_capabilities
+yeh assistant kis liye hai,help_capabilities
+help karo mujhe samajh nahi aa raha,help_capabilities
+suggest some questions i can ask,help_capabilities
+koi sawal suggest karo jo main pooch sakun,help_capabilities
+what services does this chat offer,help_capabilities
+is chat mein kya kya services hain,help_capabilities
+mere paas koi naya message aya hai,unread_alerts
+do i have new messages,unread_alerts
+mera inbox dikhao,unread_alerts
+show my inbox,unread_alerts
+koi alert aya hai kya,unread_alerts
+has any alert come in,unread_alerts
+kya school ne kuch bheja hai,unread_alerts
+did the school send anything,unread_alerts
+aaj ka koi notice,unread_alerts
+is there a notice today,unread_alerts
+kya van ke baare mein koi update hai,unread_alerts
+any update about the van,unread_alerts
+mujhe koi update mila hai,unread_alerts
+did i receive any update,unread_alerts
+latest notification kya hai,unread_alerts
+what is the latest notification,unread_alerts
+pichle alerts dikhao,unread_alerts
+show me previous alerts,unread_alerts
+alert history dikhao,unread_alerts
+show alert history,unread_alerts
+mere unread messages kitne hain,unread_alerts
+how many unread messages do i have,unread_alerts
+any important alert for today,unread_alerts
+aaj ke liye koi zaroori alert,unread_alerts
+did admin send any message,unread_alerts
+admin ne koi message bheja,unread_alerts
+kya kal ki chutti ka koi notice aya hai,unread_alerts
+is there a holiday notice,unread_alerts
+check for new updates from transport,unread_alerts
+transport ki taraf se koi nayi update,unread_alerts
+pichle mahine ki payment ka record,payment_history
+show last month's payment,payment_history
+mere saare receipts,payment_history
+all my receipts please,payment_history
+kitni payments ho chuki hain,payment_history
+how many payments have i made,payment_history
+payment ki tareekh kya thi,payment_history
+what was the date of my last payment,payment_history
+maine kab kab payment ki,payment_history
+when did i make payments,payment_history
+receipt ka pdf chahiye,payment_history
+i need a pdf receipt,payment_history
+mujhe payment slip chahiye,payment_history
+can i get a payment slip,payment_history
+jazzcash se payment hui thi uski history,payment_history
+history of my jazzcash payments,payment_history
+is saal ki fee ka hisaab,payment_history
+fee ka hisaab kitaab dikhao,payment_history
+total amount paid this year,payment_history
+is saal maine kitna pay kiya,payment_history
+payment history mein kuch nahi dikh raha,payment_history
+payment history is empty,payment_history
+no payments yet kyun likha hai,payment_history
+why does it say no payments yet,payment_history
+sari payments download karo,payment_history
+previous invoices,payment_history
+pichle invoices dikhao,payment_history
+emergency contact person add karna hai,how_to_add_guardian
+add an emergency pickup contact,how_to_add_guardian
+emergency mein bache ko lene wale ka naam kaise daalun,how_to_add_guardian
+salam bhai kaise hain,greeting
+hello koi hai wahan,greeting
+assalam o alaikum ji,greeting
+hi mujhe madad chahiye thi,greeting
+salam sir kya aap free hain,greeting
+hello main parent hun,greeting
+hi i am Ali's father,greeting
+main Soban ki ammi hun salam,greeting
+assalamualaikum main parent hun,greeting
+hello kya main baat kar sakta hun,greeting
+salam koi sawal poochna tha,greeting
+hey there vango,greeting
+hi hi,greeting
+salam alaikum,greeting
+slam,greeting
+aslam o alaikum,greeting
+hello g,greeting
+oye hello,greeting
+hello bhai,greeting
+hi madam,greeting
+good morning ji,greeting
+good evening sir,greeting
+salam dua,greeting
+hello kaise madad milegi,greeting
+hi new user hun,greeting
+assalam,greeting
+hello main naya hun,greeting
+salam pehli baar use kar raha hun,greeting
+hi first time using this,greeting
+hello anyone,greeting
+acha theek hai bye,goodbye
+chalo shukriya allah hafiz,goodbye
+ok ji khuda hafiz,goodbye
+bas yehi poochna tha bye,goodbye
+thanks allah hafiz,goodbye
+ok main chalta hun,goodbye
+ab bas bye,goodbye
+khuda hafiz phir milenge,goodbye
+acha allah hafiz,goodbye
+ok gn bye,goodbye
+good night ji,goodbye
+shukriya good night,goodbye
+bye see you tomorrow,goodbye
+kal baat karte hain,goodbye
+kal phir poochunga bye,goodbye
+ok bas bye,goodbye
+done bye,goodbye
+that is it bye,goodbye
+finished bye,goodbye
+ok khtm bye,goodbye
+allah hafiz sir,goodbye
+allah hafiz madam,goodbye
+bye take care,goodbye
+khair andesh,goodbye
+chalta hun allah hafiz,goodbye
+bye ji,goodbye
+alwida,goodbye
+ok then bye,goodbye
+goodbye ji,goodbye
+hafiz,goodbye
+haan,thanks
+ji,thanks
+ok,thanks
+nahi,thanks
+theek hai,thanks
+acha,thanks
+ji haan,thanks
+ji bilkul,thanks
+hmm theek,thanks
+ok ji,thanks
+sahi hai,thanks
+chalo theek,thanks
+haan bilkul,thanks
+yes,thanks
+no,thanks
+okay,thanks
+alright,thanks
+done,thanks
+got it,thanks
+samajh gaya,thanks
+shukriya bhai bohat acha,thanks
+thanks yaar,thanks
+allah aap ko khush rakhe,thanks
+bohat acha jawab shukriya,thanks
+mashallah acha kaam hai shukriya,thanks
+thanks jawab mil gaya,thanks
+shukriya madad ke liye,thanks
+thank you ji bohat,thanks
+bohat acha shukriya ji,thanks
+zabardast shukriya,thanks
+subah van kitne baje darwaze par hogi,pickup_time
+bache ko kitne baje bahar bhejun,pickup_time
+van timing for monday,pickup_time
+kya pickup time same hai,pickup_time
+first pickup kitne baje hai,pickup_time
+meri gali mein van kab aati hai,pickup_time
+pickup ka waqt confirm karna hai,pickup_time
+bache ko kitne baje tayyar karun,pickup_time
+what time should we wait at the stop,pickup_time
+stop par kitne baje pohanchna hai,pickup_time
+morning schedule kya hai,pickup_time
+kitni der mein van aani chahiye,pickup_time
+is pickup at 7 or 7 30,pickup_time
+pickup 7 baje hai ya 8,pickup_time
+van ka arrival time ghar par,pickup_time
+van kitne baje uthati hai bachon ko,pickup_time
+subah ki timing batao,pickup_time
+mere dono bachon ka pickup time,pickup_time
+both kids pickup timing kya hai,pickup_time
+van kal kitne baje aani hai,pickup_time
+aaj pickup ka time confirm karo,pickup_time
+pickup time change hua hai kya,pickup_time
+has the pickup time changed,pickup_time
+van ka time badla to nahi,pickup_time
+pickup time kitna hai aaj,pickup_time
+school jane ka time kya hai van ka,pickup_time
+exact pickup time chahiye,pickup_time
+mujhe sahi time batao van ka,pickup_time
+morning van kis waqt,pickup_time
+time of morning pickup please,pickup_time
+bache ko ghar kitne baje chorti hai van,dropoff_time
+school se kitne baje nikal ti hai van,dropoff_time
+aaj wapsi ka time kya hoga,dropoff_time
+kya drop time badla hai,dropoff_time
+has the drop time changed,dropoff_time
+drop time same hai na,dropoff_time
+chutti kitne baje hoti hai van kab chalti hai,dropoff_time
+van ghar kitne baje wapis pohanchti hai,dropoff_time
+return timing batao,dropoff_time
+afternoon ka schedule kya hai,dropoff_time
+dono bachon ka drop time,dropoff_time
+both children drop timing,dropoff_time
+kal drop ka time kya hoga,dropoff_time
+half day par drop kitne baje,dropoff_time
+friday ko drop kab hoti hai,dropoff_time
+friday drop timing,dropoff_time
+kitne baje ghar par mojood rehna hai,dropoff_time
+what time should someone be home,dropoff_time
+drop par ghar koi hona chahiye kitne baje,dropoff_time
+evening van kitne baje,dropoff_time
+van shaam ko kitne baje aati hai,dropoff_time
+exact drop time chahiye,dropoff_time
+drop ka sahi time batao,dropoff_time
+school chutti ke kitni der baad drop,dropoff_time
+how long after school does the van drop,dropoff_time
+wapsi ka safar kitna lamba hai,dropoff_time
+drop time for grade 5,dropoff_time
+mere bache ki wapsi ka waqt,dropoff_time
+time of afternoon drop please,dropoff_time
+drop schedule aaj ka,dropoff_time
+van abhi kis ilaqay mein hai,van_location
+kya van meri gali mein pohanch gayi,van_location
+van ko ane mein aur kitna time,van_location
+van kab tak pohanchegi,van_location
+bacha stop par khara hai van kahan hai,van_location
+hum intezar kar rahe hain van kidhar hai,van_location
+van nazar nahi aa rahi,van_location
+10 minute se wait kar rahe hain van kahan,van_location
+kya van chal padi hai school se,van_location
+van school se nikli ya nahi,van_location
+van kis stop tak pohanchi hai,van_location
+van kitne stops door hai,van_location
+tracking kaise dekhun,van_location
+location kaise track karun,van_location
+can i see the van on a map,van_location
+kya map par van dikh sakti hai,van_location
+van ki position batao,van_location
+current location of the van,van_location
+van abhi tak nahi ayi kya karun,van_location
+van bohat late hai kahan hai,van_location
+aaj van der se aa rahi hai kya,van_location
+is the van delayed today,van_location
+driver kidhar pohancha hai,van_location
+van ka rasta kahan tak tay hua,van_location
+kitne minute aur intezar karna hoga,van_location
+how many more minutes to wait,van_location
+van ghar ke qareeb hai kya,van_location
+is the van near my house,van_location
+van pohanchne wali hai kya,van_location
+live status of van,van_location
+bacha van mein baitha ya nahi,child_status
+confirm karo bacha van par hai,child_status
+bache ne school mein entry ki,child_status
+school pohanchne ki tasdeeq chahiye,child_status
+aaj bacha kis waqt pick hua,child_status
+what time was my child picked up today,child_status
+aaj drop kis waqt hui,child_status
+bacha kab utra van se,child_status
+mera bacha abhi van mein hai kya,child_status
+is my son on board right now,child_status
+kya dono bache van mein hain,child_status
+are both my children on the van,child_status
+aaj bache ka kya update hai,child_status
+bache ki aaj ki report,child_status
+mujhe bacha mila nahi kya van par tha,child_status
+bacha stop par nahi mila,child_status
+kya driver ne bache ko liya tha,child_status
+pickup hui thi ya nahi aaj,child_status
+bacha school gaya aaj,child_status
+did my child travel today,child_status
+bacha aaj van se gaya tha ya nahi,child_status
+aaj ka safar mukammal hua,child_status
+trip complete hui,child_status
+bache ki hifazat se pohanchne ki khabar,child_status
+safe arrival confirm karo,child_status
+bacha theek se ghar aa gaya,child_status
+confirm my child reached home,child_status
+bache ka aaj ka record dikhao,child_status
+status for today please,child_status
+koi nayi ittela,unread_alerts
+kya mere liye koi message hai,unread_alerts
+naye alerts kitne hain,unread_alerts
+alerts kitne pending hain,unread_alerts
+koi khabar aayi hai kya,unread_alerts
+kuch naya aaya hai,unread_alerts
+koi zaroori paigham,unread_alerts
+any urgent notice for me,unread_alerts
+mujhe koi alert nahi mila kya koi tha,unread_alerts
+did i miss any alert,unread_alerts
+alerts kholna hai,unread_alerts
+notifications kholo,unread_alerts
+alert page dikhao,unread_alerts
+mere messages dikhao,unread_alerts
+show my messages,unread_alerts
+koi update hai mere bache ka,unread_alerts
+any update about my child,unread_alerts
+school ne kuch bheja hai,unread_alerts
+kya admin ne kuch bheja,unread_alerts
+koi naya notice aya,unread_alerts
+recent notifications dikhao,unread_alerts
+aakhri alert kya tha,unread_alerts
+last alert kaunsa tha,unread_alerts
+what was the last notice,unread_alerts
+purane alerts bhi dikhao,unread_alerts
+kal ke alerts dikhao,unread_alerts
+yesterday ke notifications,unread_alerts
+aaj ke alerts,unread_alerts
+unread kitne hain,unread_alerts
+kitne messages unread hain,unread_alerts
+mera plan chal raha hai ya nahi,subscription_status
+plan ki halat kya hai,subscription_status
+subscription ki details batao,subscription_status
+mujhe apni subscription dekhni hai,subscription_status
+kaunsa plan laga hua hai mere account par,subscription_status
+which plan is on my account,subscription_status
+plan kab shuru hua tha,subscription_status
+subscription kab se chal rahi hai,subscription_status
+when did my plan start,subscription_status
+kitne mahine se plan chal raha hai,subscription_status
+meri fee ka kya status hai,subscription_status
+fee clear hai ya nahi,subscription_status
+koi baqaya to nahi,subscription_status
+kya mujhe kuch dena hai,subscription_status
+do i owe anything,subscription_status
+account par koi due hai,subscription_status
+payment method kaunsa laga hua hai,subscription_status
+kis se payment hoti hai meri,subscription_status
+mera plan kab tak chalega,subscription_status
+plan kitne din aur chalega,subscription_status
+subscription expire hone wali hai kya,subscription_status
+plan khatam to nahi ho gaya,subscription_status
+has my plan ended,subscription_status
+plan band to nahi ho gaya,subscription_status
+kya meri service active hai,subscription_status
+is my service running,subscription_status
+van service chalu hai meri,subscription_status
+account active hai,subscription_status
+meri membership ka status,subscription_status
+plan summary dikhao,subscription_status
+har plan ki qeemat batao,plan_prices
+plans ka rate kya hai,plan_prices
+fees kitni hai har plan ki,plan_prices
+kitne paise lagte hain mahine ke,plan_prices
+mahana kharcha kitna hoga,plan_prices
+monthly kitna dena hoga,plan_prices
+sab se mehnga plan kaunsa,plan_prices
+most expensive plan,plan_prices
+do bachon ke liye kaunsa plan,plan_prices
+plan for two children,plan_prices
+teen bachon wala plan kaunsa hai,plan_prices
+ek bache ke liye kitna,plan_prices
+one child ka rate,plan_prices
+plan ki tafseel batao,plan_prices
+plan details with price,plan_prices
+kya koi discount hai,plan_prices
+discount milta hai kya,plan_prices
+package kitne ka hai,plan_prices
+packages batao,plan_prices
+van ka monthly charge,plan_prices
+transport fee per month,plan_prices
+kitne ka parta hai mahina,plan_prices
+charges kya hain,plan_prices
+price list dikhao,plan_prices
+rates dikhao,plan_prices
+plan mein kya kya shamil hai,plan_prices
+what is included in each plan,plan_prices
+features ke sath price batao,plan_prices
+plan comparison chahiye,plan_prices
+sab plans ki list price ke sath,plan_prices
+meri payments ka record chahiye,payment_history
+purani fees ka hisab,payment_history
+hisab kitab dikhao,payment_history
+ledger dikhao,payment_history
+kitni baar payment ki hai,payment_history
+how many times have i paid,payment_history
+pichle mahine ka payment record,payment_history
+last month ki payment,payment_history
+is mahine ki payment ho gayi,payment_history
+this month payment done or not,payment_history
+payment ki tareekh batao,payment_history
+payment kis din hui thi,payment_history
+date of my last payment,payment_history
+kab kab payment hui,payment_history
+meri sari payments dikhao,payment_history
+show me all my payments,payment_history
+payment slip chahiye,payment_history
+slip nikalni hai,payment_history
+bill nikal do,payment_history
+bill chahiye mujhe,payment_history
+receipt kaise nikalti hai,payment_history
+receipt milegi kya,payment_history
+invoice download,payment_history
+invoice ka option kahan,payment_history
+meri transactions dikhao,payment_history
+transaction record chahiye,payment_history
+paid amount total kitna hai,payment_history
+ab tak kul kitna diya,payment_history
+total paid so far,payment_history
+payment summary dikhao,payment_history
+guardian list mein kaun kaun hai,guardian_info
+mere guardians ki tafseel,guardian_info
+guardian ka phone number dikhao,guardian_info
+guardian ka number kya hai list mein,guardian_info
+kis guardian ka status pending hai,guardian_info
+kaunsa guardian approve nahi hua,guardian_info
+guardian approve kab hoga mera,guardian_info
+meri guardian request kahan tak pohanchi,guardian_info
+guardian request ka natija,guardian_info
+guardian ka result aya,guardian_info
+guardian verify ho gaya kya,guardian_info
+kya guardian ki tasdeeq ho gayi,guardian_info
+guardian ka card check hua,guardian_info
+guardian approval ka intezar hai,guardian_info
+how long more for guardian approval,guardian_info
+kitna aur intezar karna hoga guardian ka,guardian_info
+guardian reject hone ki waja,guardian_info
+guardian reject kyun kiya gaya,guardian_info
+note kya likha hai guardian par,guardian_info
+admin ne kya kaha guardian ke bare mein,guardian_info
+guardian ki tadaad kitni hai,guardian_info
+mere paas kitne approved guardian hain,guardian_info
+approved kitne hain,guardian_info
+pending kitne hain,guardian_info
+kaun kaun bache ko le sakta hai list,guardian_info
+list of people allowed to pick up,guardian_info
+guardian ka relation kya likha hai,guardian_info
+guardian ki relation dekhni hai,guardian_info
+meri guardian entries dikhao,guardian_info
+guardian record dikhao,guardian_info
+guardian banane ke liye kya kya chahiye,guardian_requirements
+guardian ke liye shart kya hai,guardian_requirements
+conditions for guardian,guardian_requirements
+kya guardian ka shanakhti card lazmi hai,guardian_requirements
+id card zaroori hai kya,guardian_requirements
+b form chalega kya,guardian_requirements
+kya driving license chalega id ke tor par,guardian_requirements
+passport se guardian ban sakta hai,guardian_requirements
+guardian ki umar ka koi usool hai,guardian_requirements
+kya bacha guardian ban sakta hai,guardian_requirements
+kya bhai guardian ban sakta hai,guardian_requirements
+behn ko guardian bana sakte hain,guardian_requirements
+kya naukar ko guardian bana sakte hain,guardian_requirements
+driver ko guardian bana sakte hain kya,guardian_requirements
+guardian ki tasveer chahiye kya,guardian_requirements
+photo lagani paregi,guardian_requirements
+cnic ki dono side chahiye,guardian_requirements
+kya cnic ki back side bhi,guardian_requirements
+kitni der mein guardian verify hota hai,guardian_requirements
+verification ka time kitna,guardian_requirements
+kya same din approve ho jata hai,guardian_requirements
+approval same day hoti hai,guardian_requirements
+guardian ke liye form kaise bharun,guardian_requirements
+form mein kya likhna hai,guardian_requirements
+kya guardian ko khud aana parega,guardian_requirements
+guardian ko school aana hoga,guardian_requirements
+pickup par kya dikhana hoga guardian ko,guardian_requirements
+guardian ko id sath rakhni hogi,guardian_requirements
+documents ki list batao guardian ke liye,guardian_requirements
+guardian add karne ka tariqa batao,how_to_add_guardian
+naya guardian kaise banate hain,how_to_add_guardian
+guardian banane ka process,how_to_add_guardian
+kisi ko authorize kaise karun,how_to_add_guardian
+authorize karne ka tariqa,how_to_add_guardian
+meri behn ko add karna hai,how_to_add_guardian
+bhai ko guardian banana hai,how_to_add_guardian
+mamu ko add karna hai,how_to_add_guardian
+khala ko guardian banana hai,how_to_add_guardian
+nani ko add karna chahta hun,how_to_add_guardian
+dadi ko guardian banana hai,how_to_add_guardian
+padosi ko add karna hai,how_to_add_guardian
+driver ko guardian add karna hai,how_to_add_guardian
+kya main ab guardian add kar sakta hun,how_to_add_guardian
+guardian kaise register hoga,how_to_add_guardian
+guardian wala form kahan milega,how_to_add_guardian
+guardian ka option kahan hai,how_to_add_guardian
+add guardian kahan se karun,how_to_add_guardian
+guardian add karne ka button,how_to_add_guardian
+new guardian entry kaise karun,how_to_add_guardian
+kisi ko pickup ki ijazat kaise dun,how_to_add_guardian
+how to give someone pickup permission,how_to_add_guardian
+aaj koi aur lene aayega kaise add karun,how_to_add_guardian
+emergency mein kisi ko kaise add karun,how_to_add_guardian
+ek aur guardian add karna hai,how_to_add_guardian
+dusra guardian kaise add hoga,how_to_add_guardian
+guardian add karne ke baad kya hoga,how_to_add_guardian
+adding a guardian steps,how_to_add_guardian
+guardian banane mein kya karna parta hai,how_to_add_guardian
+guardian ka ijafa kaise karun,how_to_add_guardian
+naya bacha kaise register hoga,how_to_add_child
+bache ka ijafa kaise karun,how_to_add_child
+apne bache ko kaise shamil karun,how_to_add_child
+chhote bache ko bhi add karna hai,how_to_add_child
+mera dusra beta bhi jata hai kaise add karun,how_to_add_child
+beti ko bhi van lagwani hai,how_to_add_child
+dono bachon ko add karna hai,how_to_add_child
+teeno bachon ko kaise add karun,how_to_add_child
+bache ka naam kaise darj karun,how_to_add_child
+student kaise register hota hai,how_to_add_child
+bache ki entry kaise karun,how_to_add_child
+add child ka option kahan hai,how_to_add_child
+bacha add karne ka button kahan,how_to_add_child
+my children page kahan hai,how_to_add_child
+bache ki grade kahan likhni hai,how_to_add_child
+section kahan bharna hai,how_to_add_child
+class ka khana kahan hai,how_to_add_child
+bache ko add karne ke baad kya hoga,how_to_add_child
+add karne par kitni der mein approve hoga,how_to_add_child
+bacha add kar diya ab kya,how_to_add_child
+naye bache ke liye alag fee lagegi,how_to_add_child
+dusre bache ka kharcha alag hoga,how_to_add_child
+kya plan mein dusra bacha aa jayega,how_to_add_child
+mere plan mein kitne bache aa sakte hain,how_to_add_child
+bacha add nahi ho raha,how_to_add_child
+add child kaam nahi kar raha,how_to_add_child
+bacha list mein nahi aa raha,how_to_add_child
+new admission kaise karayen,how_to_add_child
+enroll karne ka tariqa,how_to_add_child
+bache ko system mein kaise dalun,how_to_add_child
+fee kahan se bharni hai,how_to_pay_fee
+paisay kaise bhejun,how_to_pay_fee
+payment ka tariqa batao,how_to_pay_fee
+kaise pay karun main,how_to_pay_fee
+jazzcash ka option hai,how_to_pay_fee
+easypaisa chalta hai,how_to_pay_fee
+bank account mein bhej sakte hain,how_to_pay_fee
+kya cash de sakte hain school mein,how_to_pay_fee
+cash jama hoga,how_to_pay_fee
+card lagta hai kya,how_to_pay_fee
+debit card chalega,how_to_pay_fee
+credit card se ho jayega,how_to_pay_fee
+online payment kaise hoti hai,how_to_pay_fee
+app se payment kaise karun,how_to_pay_fee
+payment karne ke steps,how_to_pay_fee
+pay karne ka process,how_to_pay_fee
+pay karne ka button kahan hai,how_to_pay_fee
+payment wala safha kahan hai,how_to_pay_fee
+payment method kaise lagaun,how_to_pay_fee
+apna account number kahan dalun,how_to_pay_fee
+jazzcash number kahan likhna hai,how_to_pay_fee
+payment ho gayi lekin plan active nahi,how_to_pay_fee
+paise kat gaye plan nahi laga,how_to_pay_fee
+payment hui hai confirm nahi ho rahi,how_to_pay_fee
+paisay kat gaye ab kya karun,how_to_pay_fee
+payment fail ho rahi hai,how_to_pay_fee
+transaction fail ho gaya,how_to_pay_fee
+payment kyun nahi ho rahi,how_to_pay_fee
+kya online payment mehfooz hai,how_to_pay_fee
+payment ki last date kya hoti hai,how_to_pay_fee
+plan khatam karna chahta hun,cancel_subscription
+service nahi chahiye ab,cancel_subscription
+van band karwani hai,cancel_subscription
+is mahine ke baad nahi chahiye,cancel_subscription
+agle mahine se band kar dein,cancel_subscription
+service rok dein,cancel_subscription
+kuch arsay ke liye band karna hai,cancel_subscription
+chutiyon mein band karna hai,cancel_subscription
+garmiyon ki chutti mein band karwana hai,cancel_subscription
+school off hai plan rok dein,cancel_subscription
+bacha ab van se nahi jata band kar dein,cancel_subscription
+hum shift ho rahe hain service band karein,cancel_subscription
+shehar chhod rahe hain plan cancel,cancel_subscription
+plan cancel karne par paise wapis,cancel_subscription
+agar cancel karun to refund hoga,cancel_subscription
+beech mahine cancel karne par kya,cancel_subscription
+paisay wapis mil jayenge,cancel_subscription
+adhoore mahine ke paise milenge,cancel_subscription
+cancel karne ka tariqa,cancel_subscription
+cancel ka button kahan hai,cancel_subscription
+subscription khatam karne ke steps,cancel_subscription
+band karne ke liye kis se baat karun,cancel_subscription
+cancel karne ke liye kahan jaun,cancel_subscription
+kya main khud cancel kar sakta hun,cancel_subscription
+cancel karne par kya bacha van se nikal jayega,cancel_subscription
+cancel ke baad kab tak service chalegi,cancel_subscription
+notice dena hota hai kya,cancel_subscription
+kitne din pehle batana hota hai,cancel_subscription
+cancel karne ke baad dobara le sakte hain,cancel_subscription
+plan hold karna hai,cancel_subscription
+account band karna hai,cancel_subscription
+password badalna hai mujhe,change_password
+apna password kaise badlun,change_password
+naya password lagana hai,change_password
+purana password hata kar naya lagana hai,change_password
+password change ka option kahan,change_password
+security settings kahan hain,change_password
+password bhool gayi hun,change_password
+apna password yaad nahi aa raha,change_password
+login ka password bhool gaya,change_password
+account mein nahi ja pa raha password,change_password
+password galat keh raha hai,change_password
+wrong password aa raha hai,change_password
+password reset karna hai kaise,change_password
+reset link kaise milega,change_password
+email par link aayega kya,change_password
+reset email nahi aaya,change_password
+link nahi mil raha email mein,change_password
+spam mein bhi nahi hai link,change_password
+kitni der mein link aata hai,change_password
+mobile number par code aayega,change_password
+otp aayega kya,change_password
+password kaisa hona chahiye,change_password
+mazboot password kya hota hai,change_password
+password mein kya kya hona chahiye,change_password
+kam se kam kitne harf ka password,change_password
+password kitna lamba ho,change_password
+kya password share kar sakta hun,change_password
+kisi aur ne mera account khola hai,change_password
+account hack ho gaya lagta hai,change_password
+account mehfooz kaise karun,change_password
+login secure kaise karun,change_password
+apni maloomat kaise badlun,update_profile
+profile mein tabdeeli karni hai,update_profile
+apna record update karna hai,update_profile
+naya number lagana hai account par,update_profile
+mera sim badal gaya hai number update karein,update_profile
+purana number band ho gaya,update_profile
+number theek karna hai galat laga hua hai,update_profile
+phone number galat hai,update_profile
+email galat likhi gayi hai,update_profile
+email theek karwani hai,update_profile
+apni email badalni hai,update_profile
+naam ki spelling theek karni hai,update_profile
+mere naam mein ghalti hai,update_profile
+naam durust karwana hai,update_profile
+shehar badal gaya hai update karein,update_profile
+city change karni hai,update_profile
+address kaise update karun,update_profile
+apni tafseelat dekhni hain,update_profile
+meri details dikhao,update_profile
+account mein kya kya laga hua hai,update_profile
+aap ke paas mera kaunsa number hai,update_profile
+kaunsa number registered hai mera,update_profile
+meri email kaunsi hai system mein,update_profile
+profile ka safha kahan hai,update_profile
+settings kahan milti hain,update_profile
+edit ka option kahan hai,update_profile
+save kaise karun tabdeeli,update_profile
+tabdeeli save nahi ho rahi,update_profile
+profile update nahi ho raha,update_profile
+apni tasveer lagani hai,update_profile
+photo change karni hai,update_profile
+alerts band kaise karun,notification_settings
+sms rok dein,notification_settings
+mujhe sms mat bhejein,notification_settings
+email ki ittela band karein,notification_settings
+notification ki setting kahan hai,notification_settings
+alerts ki setting kahan milegi,notification_settings
+kaunse alerts chalu hain mere,notification_settings
+mere liye kaunsi ittela on hai,notification_settings
+sms on karna hai,notification_settings
+email alerts chalu karne hain,notification_settings
+push notification kaise on hoti hai,notification_settings
+mobile par notification nahi aati,notification_settings
+phone par alert nahi aata,notification_settings
+mujhe koi ittela nahi milti,notification_settings
+alerts kyun nahi aa rahe,notification_settings
+sms aana band ho gaya,notification_settings
+pehle sms aate the ab nahi,notification_settings
+email kyun nahi aa rahi,notification_settings
+notifications kam kar dein,notification_settings
+bohat zyada message aate hain,notification_settings
+itne alerts nahi chahiye,notification_settings
+sirf zaroori alerts bhejein,notification_settings
+sirf pickup ka alert chahiye,notification_settings
+drop ka alert band kar dein,notification_settings
+sirf emergency ka alert rakhein,notification_settings
+daily message band karein,notification_settings
+roz ka summary nahi chahiye,notification_settings
+kaunse number par alert jate hain,notification_settings
+alerts kis email par aate hain,notification_settings
+alert settings badalni hain,notification_settings
+school ka number chahiye,contact_support
+office ka number do,contact_support
+transport office se baat karni hai,contact_support
+kis se baat karun apni shikayat ke liye,contact_support
+kis ko call karun madad ke liye,contact_support
+helpline kahan hai,contact_support
+support ka number kahan milega,contact_support
+koi insaan se baat karwa dein,contact_support
+main bot se nahi insaan se baat karunga,contact_support
+real person se baat karni hai,contact_support
+admin ka number chahiye,contact_support
+principal se baat karni hai,contact_support
+school office ka waqt kya hai,contact_support
+office kab khulta hai,contact_support
+kis waqt call kar sakte hain,contact_support
+chutti wale din call ho sakti hai,contact_support
+sunday ko office khula hai,contact_support
+email kahan bhejun apni baat,contact_support
+complaint kis email par bhejun,contact_support
+school ki email address,contact_support
+support ki email chahiye,contact_support
+whatsapp number hai koi,contact_support
+school ka whatsapp,contact_support
+office ka pata kya hai,contact_support
+school ka address chahiye,contact_support
+kahan jana hoga baat karne ke liye,contact_support
+kis se milna hoga,contact_support
+transport incharge kaun hai,contact_support
+incharge ka rabta number,contact_support
+madad ke liye rabta,contact_support
+muft mein try kar sakte hain,free_trial
+bina paise ke chala sakte hain,free_trial
+pehle try karna hai phir paise dunga,free_trial
+koi muft period hai,free_trial
+free days milte hain,free_trial
+kuch din free chalta hai kya,free_trial
+trial ka option hai kya,free_trial
+azmaishi muddat hai,free_trial
+demo mil sakta hai,free_trial
+test ke liye chala sakte hain,free_trial
+trial kitne din chalta hai,free_trial
+muft kitne din,free_trial
+free kitne din ka hai,free_trial
+trial ka waqt kitna,free_trial
+mera trial kab khatam ho raha,free_trial
+trial ke kitne din bache,free_trial
+trial khatam hone ke baad kya hoga,free_trial
+free khatam hone par band ho jayega,free_trial
+trial ke baad paise dene honge,free_trial
+phir kitna dena hoga,free_trial
+trial barha sakte hain,free_trial
+kuch din aur free mil sakte hain,free_trial
+trial dobara mil sakta hai,free_trial
+naye users ke liye koi offer,free_trial
+koi free offer chal raha hai,free_trial
+muft plan bhi hai kya,free_trial
+free wala plan,free_trial
+bina fee ke service,free_trial
+trial kaise shuru karun,free_trial
+aaj bacha nahi jayega van mat bhejna,report_absence
+kal van na bhejein,report_absence
+aaj chutti hai van nahi chahiye,report_absence
+bacha bimar hai aaj nahi jayega,report_absence
+bukhar hai bacha nahi jayega,report_absence
+tabiyat kharab hai chutti hai,report_absence
+doctor ke paas jana hai aaj van nahi,report_absence
+aaj hum khud chor denge,report_absence
+aaj main khud le jaunga bache ko,report_absence
+aaj hum khud le aayenge,report_absence
+wapsi par van nahi chahiye aaj,report_absence
+sirf subah chahiye drop nahi,report_absence
+sirf drop chahiye pickup nahi,report_absence
+aaj subah nahi lena,report_absence
+kal se do din nahi jayega,report_absence
+is hafte bacha nahi jayega,report_absence
+agle hafte chutti hai,report_absence
+shadi hai isliye nahi jayega,report_absence
+ghar mein mehman hain aaj nahi,report_absence
+safar par ja rahe hain,report_absence
+bahar ja rahe hain 5 din,report_absence
+chutti ki darkhwast,report_absence
+leave lagani hai,report_absence
+chutti likhwani hai,report_absence
+absent karwana hai,report_absence
+driver ko ittela kar dein bacha nahi aayega,report_absence
+driver ko bata dein aaj wait na kare,report_absence
+van ko mana kar dein,report_absence
+aaj van ka intezar na karein,report_absence
+pickup skip kar dein aaj,report_absence
