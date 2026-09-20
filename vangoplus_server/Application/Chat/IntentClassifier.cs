@@ -54,7 +54,6 @@ namespace vangoplus_server.Application.Chat
         };
 
         private readonly PredictionEngine<IntentRow, IntentPrediction> _engine;
-        private readonly string[] _labels;
         private readonly object _lock = new();
 
         public IntentClassifier(IWebHostEnvironment env)
@@ -63,13 +62,9 @@ namespace vangoplus_server.Application.Chat
             var ml = new MLContext();
             var model = ml.Model.Load(modelPath, out _);
 
+            // MapKeyToValue in the pipeline means PredictedLabel already comes back as the
+            // intent name, so the Score slot names are not needed here.
             _engine = ml.Model.CreatePredictionEngine<IntentRow, IntentPrediction>(model);
-
-            // The Score array is ordered by the key values of the Label column. Read those
-            // slot names so a score index can be turned back into an intent name.
-            Microsoft.ML.Data.VBuffer<ReadOnlyMemory<char>> slots = default;
-            _engine.OutputSchema["Score"].GetSlotNames(ref slots);
-            _labels = slots.DenseValues().Select(s => s.ToString()).ToArray();
         }
 
         public IntentResult Classify(string message)

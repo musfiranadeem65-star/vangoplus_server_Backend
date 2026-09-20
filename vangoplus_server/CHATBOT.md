@@ -5,13 +5,25 @@ handlers that read the parent's real data from PostgreSQL.
 
 ## Setup
 
+The trained model (`ML/intent_model.zip`) is committed, so the API runs as-is:
+
 ```bash
-dotnet restore          # Microsoft.ML 5.0.0 was added to the csproj
-dotnet run -- train     # trains, prints accuracy + confusion matrix, writes ML/intent_model.zip
-dotnet run              # normal API start
+dotnet restore
+dotnet run
 ```
 
-Commit `ML/intent_model.zip` once trained — the API loads it at startup and fails without it.
+Retrain only after editing the dataset — it overwrites the model file:
+
+```bash
+dotnet run -- train
+```
+
+Check what the model makes of a message, without the API or the database:
+
+```bash
+dotnet run -- classify "van kab aye gi"
+# pickup_time  (confidence 84.1%, matched by model)
+```
 
 ```bash
 curl -k -X POST https://localhost:7270/api/chat \
@@ -66,16 +78,41 @@ Where the database holds nothing, the bot says so instead of inventing data:
 `parentUserId` is sent in the request body because frontend auth is still mocked. With real
 auth it comes from the session and the body field goes away.
 
-## Dataset history
+## Results
 
-| Version | Rows | Intents | Baseline accuracy |
-|---|---|---|---|
-| v1 | 1,432 | 35 | 68–74% |
-| v2 | 1,758 | 32 | 77.9% |
-| v3/v4 (current) | 2,448 | 31 | 78.9% |
+Trained on 2,448 rows, evaluated on a held-out 20%:
 
-Those come from a naive-Bayes baseline used to sanity-check the data. The real number is what
-`dotnet run -- train` prints.
+| Metric | Value |
+|---|---|
+| MicroAccuracy | **80.83%** |
+| MacroAccuracy | **80.37%** |
+| LogLoss | 0.7187 |
+
+Strongest: `greeting` and `thanks` 100% recall, `guardian_info` 96%, `driver_info` 95%.
+Weakest: `emergency` 42.9%, `complaint` 50%, `out_of_scope` 50% — the three broadest
+categories, where a parent can say almost anything.
+
+**That `emergency` number is why the keyword rule exists.** The model alone catches fewer than
+half of them, so emergencies are matched on keywords before the model ever runs. It is the one
+intent where a miss is not a bad answer but a dangerous one.
+
+### Choices made by measurement
+
+Trainers tried: SdcaMaximumEntropy 76.5%, OVA-LinearSvm 76.1%, OVA-AveragedPerceptron 75.9%,
+SdcaNonCalibrated 75.5%, LbfgsMaximumEntropy 53.8%, NaiveBayes 5.5%.
+
+Featurisation mattered more than the trainer: word unigrams + character 3-grams with TF-IDF
+scored **81.0%**, against 77.3% for word bigrams + char 4-grams with plain TF. Bigrams hurt
+because Roman Urdu reorders freely — "van kab aye gi" and "kab aye gi van" are the same
+question, and a bigram splits evidence that a unigram keeps together.
+
+### Dataset history
+
+| Version | Rows | Intents |
+|---|---|---|
+| v1 | 1,432 | 35 |
+| v2 | 1,758 | 32 |
+| current | 2,448 | 31 |
 
 Four merges, each because one query answers both questions: `route_not_assigned`→`route_info`,
 `driver_contact`→`driver_info`, `guardian_status`+`list_guardians`→`guardian_info`,

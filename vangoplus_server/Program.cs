@@ -18,6 +18,16 @@ if (args.Contains("train"))
     return;
 }
 
+// Check what the model makes of a message, without starting the API or touching the
+// database:  dotnet run -- classify "van kab aye gi"
+if (args.Length >= 2 && args[0] == "classify")
+{
+    var classifier = new IntentClassifier(builder.Environment);
+    var result = classifier.Classify(string.Join(' ', args.Skip(1)));
+    Console.WriteLine($"{result.Intent}  (confidence {result.Confidence:P1}, matched by {result.Source})");
+    return;
+}
+
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddCors(options =>
