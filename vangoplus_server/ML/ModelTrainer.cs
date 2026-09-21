@@ -71,7 +71,16 @@ namespace vangoplus_server.ML
             var pipeline = ml.Transforms.Conversion
                 .MapValueToKey("Label", nameof(IntentRow.Intent))
                 .Append(ml.Transforms.Text.FeaturizeText("Features", featureOptions, nameof(IntentRow.Text)))
-                .Append(ml.MulticlassClassification.Trainers.SdcaMaximumEntropy("Label", "Features"))
+                // NumberOfThreads = 1 makes training reproducible. SDCA is multi-threaded by
+                // default, so the accuracy moves by a few tenths of a percent on every run and
+                // the figure in the report would never quite match a live re-run.
+                .Append(ml.MulticlassClassification.Trainers.SdcaMaximumEntropy(
+                    new Microsoft.ML.Trainers.SdcaMaximumEntropyMulticlassTrainer.Options
+                    {
+                        LabelColumnName = "Label",
+                        FeatureColumnName = "Features",
+                        NumberOfThreads = 1
+                    }))
                 .Append(ml.Transforms.Conversion.MapKeyToValue("PredictedLabel"));
 
             Console.WriteLine("Training…");

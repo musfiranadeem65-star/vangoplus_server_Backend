@@ -31,6 +31,22 @@ curl -k -X POST https://localhost:7270/api/chat \
   -d '{"parentUserId":1,"message":"van kab aye gi"}'
 ```
 
+## Showing the supervisor how the model was trained
+
+Everything needed is in the repo, and training runs in about 3 seconds, so it can be done live:
+
+1. `ML/vango_intents.csv` — the dataset, written by us: 2,448 rows, 31 intents.
+2. `ML/ModelTrainer.cs` — the training code. The pipeline is five readable lines: map the
+   intent to a label, turn the text into numbers (word unigrams + character 3-grams, TF-IDF),
+   train SdcaMaximumEntropy, map the prediction back to a name.
+3. `dotnet run -- train` — trains from the CSV in front of him and prints accuracy, per-intent
+   recall and precision, and the confusion matrix. Same numbers every run.
+4. `dotnet run -- classify "van kab aye gi"` — shows a single prediction with its confidence.
+5. `git log ML/vango_intents.csv` — the dataset's history, showing it was built up by hand.
+
+No pre-trained model is downloaded or used anywhere. The only thing the model ever learned
+came from that CSV.
+
 ## How it answers
 
 ```
@@ -84,13 +100,17 @@ Trained on 2,448 rows, evaluated on a held-out 20%:
 
 | Metric | Value |
 |---|---|
-| MicroAccuracy | **80.83%** |
-| MacroAccuracy | **80.37%** |
-| LogLoss | 0.7187 |
+| MicroAccuracy | **80.63%** |
+| MacroAccuracy | **79.88%** |
+| LogLoss | 0.7482 |
 
-Strongest: `greeting` and `thanks` 100% recall, `guardian_info` 96%, `driver_info` 95%.
-Weakest: `emergency` 42.9%, `complaint` 50%, `out_of_scope` 50% — the three broadest
-categories, where a parent can say almost anything.
+Training is **reproducible**: `NumberOfThreads = 1` and a fixed seed mean `dotnet run -- train`
+prints these same figures every time, so the numbers in the report can be re-checked live.
+It takes about 3 seconds.
+
+Strongest: `greeting` 100% recall, `guardian_info` 96%, `driver_info` 95%.
+Weakest: `emergency` 42.9%, `complaint` 50%, `how_to_add_guardian` 54%, `out_of_scope` 57% —
+the broadest categories, where a parent can say almost anything.
 
 **That `emergency` number is why the keyword rule exists.** The model alone catches fewer than
 half of them, so emergencies are matched on keywords before the model ever runs. It is the one
@@ -99,7 +119,8 @@ intent where a miss is not a bad answer but a dangerous one.
 ### Choices made by measurement
 
 Trainers tried: SdcaMaximumEntropy 76.5%, OVA-LinearSvm 76.1%, OVA-AveragedPerceptron 75.9%,
-SdcaNonCalibrated 75.5%, LbfgsMaximumEntropy 53.8%, NaiveBayes 5.5%.
+SdcaNonCalibrated 75.5%, LbfgsMaximumEntropy 53.8%, NaiveBayes 5.5%. (Those were measured with
+the default featurisation, before the featurisation below was tuned.)
 
 Featurisation mattered more than the trainer: word unigrams + character 3-grams with TF-IDF
 scored **81.0%**, against 77.3% for word bigrams + char 4-grams with plain TF. Bigrams hurt
