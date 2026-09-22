@@ -55,6 +55,17 @@ public async Task<UserDetailDto?> GetByIdWithSubscriptionsAsync(int id)
     return await _service.GetByIdWithSubscriptionsAsync(id);
 }
 
+public async Task ChangePasswordAsync(ChangePasswordDto dto)
+{
+    if (dto == null) throw new ArgumentNullException(nameof(dto));
+    if (string.IsNullOrWhiteSpace(dto.Email)) throw new ArgumentException("Email is required.", nameof(dto.Email));
+    if (string.IsNullOrWhiteSpace(dto.CurrentPassword)) throw new ArgumentException("Current password is required.", nameof(dto.CurrentPassword));
+    if (string.IsNullOrWhiteSpace(dto.NewPassword) || dto.NewPassword.Length < 6) throw new ArgumentException("New password must be at least 6 characters.", nameof(dto.NewPassword));
+    if (dto.NewPassword != dto.ConfirmPassword) throw new ArgumentException("New password and confirmation do not match.", nameof(dto.ConfirmPassword));
+
+    await _service.ChangePasswordAsync(dto);
+}
+
 public async Task<LoginResponseDto?> LoginAsync(LoginRequestDto request)
 {
     if (request == null) throw new ArgumentNullException(nameof(request));
@@ -74,6 +85,21 @@ public async Task<LoginResponseDto?> LoginAsync(LoginRequestDto request)
         City = user.City,
         Status = user.Status
     };
+}
+
+public async Task<NotificationPreferencesDto?> GetNotificationPreferencesAsync(int id)
+{
+    return await _service.GetNotificationPreferencesAsync(id);
+}
+
+public async Task UpdateNotificationPreferencesAsync(int id, NotificationPreferencesDto dto)
+{
+    if (dto == null) throw new ArgumentNullException(nameof(dto));
+
+    var user = await _service.GetByIdAsync(id);
+    if (user == null) throw new InvalidOperationException("User not found.");
+
+    await _service.UpdateNotificationPreferencesAsync(id, dto);
 }
     }
 }

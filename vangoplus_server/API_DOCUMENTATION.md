@@ -135,35 +135,61 @@ Subscription ──────────┬───────────�
 | 1 | User | GET | `/api/users` | Get all users |
 | 2 | User | GET | `/api/users/{id}` | Get user by ID |
 | 3 | User | POST | `/api/users` | Create new user |
-| 4 | User | PUT | `/api/users/{id}` | Update user |
-| 5 | User | DELETE | `/api/users/{id}` | Delete user |
-| 6 | Student | GET | `/api/students` | Get all students |
-| 7 | Student | GET | `/api/students/{id}` | Get student by ID |
-| 8 | Student | GET | `/api/students/parent/{parentId}` | Get students by parent |
-| 9 | Student | POST | `/api/students` | Create new student |
-| 10 | Student | PUT | `/api/students/{id}` | Update student |
-| 11 | Student | DELETE | `/api/students/{id}` | Delete student |
-| 12 | Guardian | POST | `/api/Guardian` | Create new guardian |
-| 13 | Guardian | GET | `/api/students/{studentId}/guardians` | Get guardians by student |
-| 14 | Guardian | POST | `/api/students/{studentId}/guardians` | Link guardian to student |
-| 15 | Guardian | PUT | `/api/students/{studentId}/guardians/{id}` | Update guardian |
-| 16 | Guardian | PATCH | `/api/students/{studentId}/guardians/{id}/status` | Update guardian status |
-| 17 | Guardian | DELETE | `/api/students/{studentId}/guardians/{id}` | Delete guardian |
-| 18 | Driver | GET | `/api/drivers` | Get all drivers |
-| 19 | Driver | GET | `/api/drivers/{id}` | Get driver by ID |
-| 20 | Driver | POST | `/api/drivers` | Create new driver |
-| 21 | Driver | PUT | `/api/drivers/{id}` | Update driver |
-| 22 | Driver | DELETE | `/api/drivers/{id}` | Delete driver |
-| 23 | Driver | PATCH | `/api/drivers/{id}/status` | Update driver status |
-| 24 | Route | GET | `/api/routes` | Get all routes |
-| 25 | Route | GET | `/api/routes/{id}` | Get route by ID |
-| 26 | Route | POST | `/api/routes` | Create new route |
-| 27 | Route | PUT | `/api/routes/{id}` | Update route |
-| 28 | Route | PATCH | `/api/routes/{id}/status` | Update route status |
-| 29 | Route | DELETE | `/api/routes/{id}` | Delete route |
-| 30 | RouteStop | GET | `/api/routes/{routeId}/stops` | Get stops by route |
-| 31 | RouteStop | POST | `/api/routes/{routeId}/stops` | Create route stop |
-| 32 | RouteStop | GET | `/api/routes/stops/{id}` | Get route stop by ID |
+| 4 | User | POST | `/api/users/login` | User login |
+| 5 | User | PUT | `/api/users/{id}` | Update user |
+| 6 | User | DELETE | `/api/users/{id}` | Delete user |
+| 7 | Student | GET | `/api/students` | Get all students |
+| 8 | Student | GET | `/api/students/{id}` | Get student by ID |
+| 9 | Student | GET | `/api/students/parent/{parentId}` | Get students by parent |
+| 10 | Student | POST | `/api/students` | Create new student |
+| 11 | Student | PUT | `/api/students/{id}` | Update student |
+| 12 | Student | DELETE | `/api/students/{id}` | Delete student |
+| 13 | Guardian | GET | `/api/Guardian` | Get all guardians |
+| 14 | Guardian | POST | `/api/Guardian` | Create new guardian |
+| 15 | Guardian | GET | `/api/students/{studentId}/guardians` | Get guardians by student |
+| 16 | Guardian | POST | `/api/students/{studentId}/guardians` | Link guardian to student |
+| 17 | Guardian | PUT | `/api/students/{studentId}/guardians/{id}` | Update guardian |
+| 18 | Guardian | PATCH | `/api/Guardian/{id}/status` | Update guardian status |
+| 19 | Guardian | DELETE | `/api/students/{studentId}/guardians/{id}` | Delete guardian |
+| 20 | Driver | GET | `/api/drivers` | Get all drivers |
+| 21 | Driver | GET | `/api/drivers/{id}` | Get driver by ID |
+| 22 | Driver | POST | `/api/drivers` | Create new driver |
+| 23 | Driver | PUT | `/api/drivers/{id}` | Update driver |
+| 24 | Driver | DELETE | `/api/drivers/{id}` | Delete driver |
+| 25 | Driver | PATCH | `/api/drivers/{id}/status` | Update driver status |
+| 26 | Route | GET | `/api/routes` | Get all routes |
+| 27 | Route | GET | `/api/routes/{id}` | Get route by ID |
+| 28 | Route | POST | `/api/routes` | Create new route |
+| 29 | Route | PUT | `/api/routes/{id}` | Update route |
+| 30 | Route | PATCH | `/api/routes/{id}/status` | Update route status |
+| 31 | Route | DELETE | `/api/routes/{id}` | Delete route |
+| 32 | RouteStop | GET | `/api/routes/{routeId}/stops` | Get stops by route |
+| 33 | RouteStop | POST | `/api/routes/{routeId}/stops` | Create route stop |
+| 34 | RouteStop | GET | `/api/routes/stops/{id}` | Get route stop by ID |
+| 35 | RouteStop | PUT | `/api/routes/stops/{id}` | Update route stop |
+| 36 | RouteStop | DELETE | `/api/routes/stops/{id}` | Delete route stop |
+| 37 | Alert | GET | `/api/students/{studentId}/alerts` | Get alerts by student |
+| 38 | Alert | GET | `/api/alerts/{id}` | Get alert by ID |
+| 39 | Alert | POST | `/api/alerts` | Create new alert |
+| 40 | Alert | PATCH | `/api/alerts/{id}/read` | Mark alert as read |
+| 41 | Alert | GET | `/api/students/{studentId}/schedule` | Get student schedule |
+| 42 | SubscriptionPlan | GET | `/api/subscription/plans` | Get all subscription plans |
+| 43 | SubscriptionPlan | GET | `/api/subscription/plans/{id}` | Get subscription plan by ID |
+| 44 | SubscriptionPlan | POST | `/api/subscription/plans` | Create subscription plan |
+| 45 | SubscriptionPlan | PUT | `/api/subscription/plans/{id}` | Update subscription plan |
+| 46 | SubscriptionPlan | DELETE | `/api/subscription/plans/{id}` | Delete subscription plan |
+| 47 | Subscription | GET | `/api/subscriptions` | Get all subscriptions |
+| 48 | Subscription | GET | `/api/subscriptions/{id}` | Get subscription by ID |
+| 49 | Subscription | GET | `/api/subscriptions/users/{userId}/subscription` | Get subscription by user |
+| 50 | Subscription | POST | `/api/subscriptions` | Create subscription |
+| 51 | Subscription | PUT | `/api/subscriptions/{id}` | Update subscription |
+| 52 | Subscription | PATCH | `/api/subscriptions/{id}/status` | Update subscription status |
+| 53 | StudentRouteAssignment | GET | `/api/student-route-assignments` | Get all assignments |
+| 54 | StudentRouteAssignment | GET | `/api/student-route-assignments/{id}` | Get assignment by ID |
+| 55 | StudentRouteAssignment | POST | `/api/student-route-assignments` | Create assignment |
+| 56 | StudentRouteAssignment | PUT | `/api/student-route-assignments/{id}` | Update assignment |
+| 57 | StudentRouteAssignment | PATCH | `/api/student-route-assignments/{id}/status` | Update assignment status |
+| 58 | StudentRouteAssignment | DELETE | `/api/student-route-assignments/{id}` | Delete assignment |
 | 33 | RouteStop | PUT | `/api/routes/stops/{id}` | Update route stop |
 | 34 | RouteStop | DELETE | `/api/routes/stops/{id}` | Delete route stop |
 | 35 | SubscriptionPlan | GET | `/api/subscription/plans` | Get all plans |
@@ -311,7 +337,48 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 4. Update User
+#### 4. User Login
+
+**Method**: `POST`
+
+**URL**: `/api/users/login`
+
+**Description**: Authenticates a user and returns a login response with user details.
+
+**Request Body**:
+```json
+{
+  "email": "john@example.com",
+  "password": "SecurePassword123"
+}
+```
+
+**Response**:
+```json
+{
+  "id": 1,
+  "name": "John Doe",
+  "email": "john@example.com",
+  "phone": "123-456-7890",
+  "city": "New York",
+  "role": "Parent",
+  "status": "Active"
+}
+```
+
+**Status Codes**:
+- `200 OK` - Login successful, user details returned
+- `401 Unauthorized` - Invalid email or password
+
+**Validation Rules**:
+- `Email` - Required, valid email format
+- `Password` - Required, non-empty
+
+**Relationships**: None
+
+---
+
+#### 5. Update User
 
 **Method**: `PUT`
 
@@ -346,7 +413,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 5. Delete User
+#### 6. Delete User
 
 **Method**: `DELETE`
 
@@ -371,7 +438,7 @@ Subscription ──────────┬───────────�
 
 ### STUDENT MODULE
 
-#### 6. Get All Students
+#### 7. Get All Students
 
 **Method**: `GET`
 
@@ -412,7 +479,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 7. Get Student by ID
+#### 8. Get Student by ID
 
 **Method**: `GET`
 
@@ -444,7 +511,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 8. Get Students by Parent
+#### 9. Get Students by Parent
 
 **Method**: `GET`
 
@@ -486,7 +553,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 9. Create Student
+#### 10. Create Student
 
 **Method**: `POST`
 
@@ -568,7 +635,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 11. Delete Student
+#### 12. Delete Student
 
 **Method**: `DELETE`
 
@@ -593,7 +660,50 @@ Subscription ──────────┬───────────�
 
 ### GUARDIAN MODULE
 
-#### 12. Create Guardian
+#### 13. Get All Guardians
+
+**Method**: `GET`
+
+**URL**: `/api/Guardian`
+
+**Description**: Retrieves a list of all guardians in the system.
+
+**Request Body**: None
+
+**Response**:
+```json
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "name": "Mary Doe",
+    "relation": "Aunt",
+    "phone": "555-1234",
+    "status": "Active",
+    "note": "Prefers morning calls"
+  },
+  {
+    "id": 2,
+    "userId": 2,
+    "name": "John Uncle",
+    "relation": "Uncle",
+    "phone": "555-5678",
+    "status": "Active",
+    "note": null
+  }
+]
+```
+
+**Status Codes**:
+- `200 OK` - Guardians retrieved successfully
+
+**Validation Rules**: None
+
+**Relationships**: None
+
+---
+
+#### 14. Create Guardian
 
 **Method**: `POST`
 
@@ -640,7 +750,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 13. Get Guardians by Student
+#### 15. Get Guardians by Student
 
 **Method**: `GET`
 
@@ -683,7 +793,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 14. Link Guardian to Student
+#### 16. Link Guardian to Student
 
 **Method**: `POST`
 
@@ -716,7 +826,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 15. Update Guardian
+#### 17. Update Guardian
 
 **Method**: `PUT`
 
@@ -750,11 +860,13 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 16. Update Guardian Status
+#### 18. Update Guardian Status
 
 **Method**: `PATCH`
 
-**URL**: `/api/students/{studentId}/guardians/{id}/status`
+**URL**: `/api/Guardian/{id}/status`
+
+**Description**: Updates only the status of a guardian (Active/Inactive).
 
 **Description**: Updates only the status of a guardian (Active/Inactive).
 
@@ -778,7 +890,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 17. Delete Guardian
+#### 19. Delete Guardian
 
 **Method**: `DELETE`
 
@@ -802,7 +914,7 @@ Subscription ──────────┬───────────�
 
 ### DRIVER MODULE
 
-#### 18. Get All Drivers
+#### 20. Get All Drivers
 
 **Method**: `GET`
 
@@ -843,7 +955,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 19. Get Driver by ID
+#### 21. Get Driver by ID
 
 **Method**: `GET`
 
@@ -875,7 +987,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 20. Create Driver
+#### 22. Create Driver
 
 **Method**: `POST`
 
@@ -920,7 +1032,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 21. Update Driver
+#### 23. Update Driver
 
 **Method**: `PUT`
 
@@ -954,7 +1066,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 22. Delete Driver
+#### 24. Delete Driver
 
 **Method**: `DELETE`
 
@@ -976,7 +1088,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 23. Update Driver Status
+#### 25. Update Driver Status
 
 **Method**: `PATCH`
 
@@ -1006,7 +1118,7 @@ Subscription ──────────┬───────────�
 
 ### ROUTE MODULE
 
-#### 24. Get All Routes
+#### 26. Get All Routes
 
 **Method**: `GET`
 
@@ -1045,7 +1157,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 25. Get Route by ID
+#### 27. Get Route by ID
 
 **Method**: `GET`
 
@@ -1076,7 +1188,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 26. Create Route
+#### 28. Create Route
 
 **Method**: `POST`
 
@@ -1121,7 +1233,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 27. Update Route
+#### 29. Update Route
 
 **Method**: `PUT`
 
@@ -1154,7 +1266,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 28. Update Route Status
+#### 30. Update Route Status
 
 **Method**: `PATCH`
 
@@ -1182,7 +1294,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 29. Delete Route
+#### 31. Delete Route
 
 **Method**: `DELETE`
 
@@ -1206,7 +1318,7 @@ Subscription ──────────┬───────────�
 
 ### ROUTESTOP MODULE
 
-#### 30. Get Stops by Route
+#### 32. Get Stops by Route
 
 **Method**: `GET`
 
@@ -1245,7 +1357,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 31. Create Route Stop
+#### 33. Create Route Stop
 
 **Method**: `POST`
 
@@ -1289,7 +1401,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 32. Get Route Stop by ID
+#### 34. Get Route Stop by ID
 
 **Method**: `GET`
 
@@ -1320,7 +1432,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 33. Update Route Stop
+#### 35. Update Route Stop
 
 **Method**: `PUT`
 
@@ -1353,7 +1465,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 34. Delete Route Stop
+#### 36. Delete Route Stop
 
 **Method**: `DELETE`
 
@@ -1376,7 +1488,7 @@ Subscription ──────────┬───────────�
 
 ### SUBSCRIPTION PLAN MODULE
 
-#### 35. Get All Subscription Plans
+#### 48. Get All Subscription Plans
 
 **Method**: `GET`
 
@@ -1415,7 +1527,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 36. Get Subscription Plan by ID
+#### 49. Get Subscription Plan by ID
 
 **Method**: `GET`
 
@@ -1446,7 +1558,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 37. Create Subscription Plan
+#### 50. Create Subscription Plan
 
 **Method**: `POST`
 
@@ -1489,7 +1601,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 38. Update Subscription Plan
+#### 51. Update Subscription Plan
 
 **Method**: `PUT`
 
@@ -1523,7 +1635,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 39. Delete Subscription Plan
+#### 52. Delete Subscription Plan
 
 **Method**: `DELETE`
 
@@ -1547,7 +1659,7 @@ Subscription ──────────┬───────────�
 
 ### SUBSCRIPTION MODULE
 
-#### 40. Get User Subscription
+#### 53. Get User Subscription
 
 **Method**: `GET`
 
@@ -1706,7 +1818,7 @@ Subscription ──────────┬───────────�
 
 ---
 
-#### 44. Update Subscription Status
+#### 57. Update Subscription
 
 **Method**: `PATCH`
 

@@ -128,11 +128,48 @@ var hash = HashPassword(passwordPlain);
 return new UserDto { Id = u.Id, Name = u.Name, Email = u.Email, Phone = u.Phone, City = u.City, Role = u.Role, Status = u.Status };
         }
 
+        public async Task ChangePasswordAsync(ChangePasswordDto dto)
+        {
+            if (dto == null) throw new ArgumentNullException(nameof(dto));
+            if (string.IsNullOrWhiteSpace(dto.Email) || string.IsNullOrWhiteSpace(dto.CurrentPassword) || string.IsNullOrWhiteSpace(dto.NewPassword))
+                throw new ArgumentException("Email, current password and new password are required.");
+
+            var normalizedEmail = dto.Email.Trim().ToLower();
+            var u = await _db.Users.FirstOrDefaultAsync(x => x.Email.ToLower() == normalizedEmail);
+            if (u == null) throw new InvalidOperationException("User not found.");
+
+            var currentHash = HashPassword(dto.CurrentPassword);
+            if (u.PasswordHash != currentHash) throw new InvalidOperationException("Current password is incorrect.");
+
+            u.PasswordHash = HashPassword(dto.NewPassword);
+            await _db.SaveChangesAsync();
+        }
+
         private static string HashPassword(string password)
         {
             using var sha = SHA256.Create();
             var bytes = sha.ComputeHash(Encoding.UTF8.GetBytes(password));
             return Convert.ToBase64String(bytes);
+        }
+
+        public async Task<NotificationPreferencesDto?> GetNotificationPreferencesAsync(int id)
+        {
+            var u = await _db.Users.FindAsync(id);
+            if (u == null) return null;
+            return new NotificationPreferencesDto
+            {
+                EmailAlerts = u.EmailAlerts,
+                SmsAlerts = u.SmsAlerts
+            };
+        }
+
+        public async Task UpdateNotificationPreferencesAsync(int id, NotificationPreferencesDto dto)
+        {
+            var u = await _db.Users.FindAsync(id);
+            if (u == null) return;
+            u.EmailAlerts = dto.EmailAlerts;
+            u.SmsAlerts = dto.SmsAlerts;
+            await _db.SaveChangesAsync();
         }
     }
 }

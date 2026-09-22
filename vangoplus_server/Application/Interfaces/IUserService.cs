@@ -13,5 +13,11 @@ namespace vangoplus_server.Application.Interfaces
         Task<UserDetailDto?> GetByIdWithSubscriptionsAsync(int id);
         // Login: returns UserDto on success, null on failure
         Task<UserDto?> LoginAsync(string email, string passwordPlain);
+        // Change password for a user (uses email + current password verification)
+        Task ChangePasswordAsync(ChangePasswordDto dto);
+        // Get notification preferences for a user
+        Task<NotificationPreferencesDto?> GetNotificationPreferencesAsync(int id);
+        // Update notification preferences for a user
+        Task UpdateNotificationPreferencesAsync(int id, NotificationPreferencesDto dto);
     }
 }

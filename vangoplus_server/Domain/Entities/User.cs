@@ -11,6 +11,8 @@ namespace vangoplus_server.Domain.Entities
         public string? Role { get; set; }
         public string? Status { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public bool EmailAlerts { get; set; } = true;
+        public bool SmsAlerts { get; set; } = true;
 
         // Navigation
         public ICollection<Subscription> Subscriptions { get; set; } = new List<Subscription>();

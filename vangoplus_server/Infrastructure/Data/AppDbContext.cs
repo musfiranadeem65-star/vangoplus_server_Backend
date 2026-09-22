@@ -6,11 +6,10 @@ namespace vangoplus_server.Infrastructure.Data
 {
     public class AppDbContext : DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        public AppDbContext(DbContextOptions<AppDbContext> options)
+            : base(options)
         {
         }
-
-
 
         public DbSet<User> Users { get; set; } = null!;
         public DbSet<Student> Students { get; set; } = null!;
@@ -23,10 +22,12 @@ namespace vangoplus_server.Infrastructure.Data
         public DbSet<Subscription> Subscriptions { get; set; } = null!;
         public DbSet<Alert> Alerts { get; set; } = null!;
         public DbSet<StudentRouteAssignment> StudentRouteAssignments { get; set; } = null!;
+        public DbSet<SchoolSetting> SchoolSettings { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<User>(b =>
             {
                 b.HasKey(u => u.Id);
@@ -37,6 +38,8 @@ namespace vangoplus_server.Infrastructure.Data
                 b.Property(u => u.City).HasMaxLength(100);
                 b.Property(u => u.Role).HasMaxLength(50);
                 b.Property(u => u.Status).HasMaxLength(50);
+                b.Property(u => u.EmailAlerts).IsRequired().HasDefaultValue(true);
+                b.Property(u => u.SmsAlerts).IsRequired().HasDefaultValue(true);
             });
 
             modelBuilder.Entity<Student>(b =>
@@ -129,16 +132,58 @@ namespace vangoplus_server.Infrastructure.Data
                 b.Property(sp => sp.Features).IsRequired().HasMaxLength(1000);
             });
 
+            modelBuilder.Entity<SchoolSetting>(b =>
+            {
+                b.HasKey(ss => ss.Id);
+                b.Property(ss => ss.SchoolName).IsRequired().HasMaxLength(200);
+                b.Property(ss => ss.ContactPerson).HasMaxLength(200);
+                b.Property(ss => ss.SchoolAddress).HasMaxLength(500);
+                b.Property(ss => ss.MonthlyAmount).IsRequired();
+                b.Property(ss => ss.SenderEmail).HasMaxLength(200);
+            });
+
             modelBuilder.Entity<Subscription>(b =>
             {
                 b.HasKey(s => s.Id);
+
                 b.Property(s => s.UserId).IsRequired();
+
                 b.Property(s => s.PlanId).IsRequired();
-                b.Property(s => s.PlanName).IsRequired().HasMaxLength(200);
-                b.Property(s => s.Price).IsRequired();
-                b.Property(s => s.Status).IsRequired().HasMaxLength(50);
-                b.Property(s => s.PaymentMethod).IsRequired().HasMaxLength(100);
-                b.Property(s => s.StartedAt).IsRequired();
+
+                b.Property(s => s.PlanName)
+                    .IsRequired()
+                    .HasMaxLength(200);
+
+                b.Property(s => s.Price)
+                    .IsRequired();
+
+                b.Property(s => s.Status)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                b.Property(s => s.PaymentMethod)
+                    .IsRequired()
+                    .HasMaxLength(100);
+
+                b.Property(s => s.StartedAt)
+                    .IsRequired();
+
+                // JazzCash fields
+                // Optional so existing subscription records remain valid.
+                b.Property(s => s.JazzCashNumber)
+                    .HasMaxLength(20)
+                    .IsRequired(false);
+
+                b.Property(s => s.TransactionId)
+                    .HasMaxLength(200)
+                    .IsRequired(false);
+
+                b.Property(s => s.PaymentStatus)
+                    .HasMaxLength(50)
+                    .IsRequired(false);
+
+                b.Property(s => s.PaidAt)
+                    .IsRequired(false);
 
                 b.HasOne(s => s.User)
                     .WithMany(u => u.Subscriptions)
@@ -170,12 +215,23 @@ namespace vangoplus_server.Infrastructure.Data
             modelBuilder.Entity<StudentRouteAssignment>(b =>
             {
                 b.HasKey(sra => sra.Id);
-                b.Property(sra => sra.StudentId).IsRequired();
-                b.Property(sra => sra.RouteId).IsRequired();
+
+                b.Property(sra => sra.StudentId)
+                    .IsRequired();
+
+                b.Property(sra => sra.RouteId)
+                    .IsRequired();
+
                 b.Property(sra => sra.PickupTime);
+
                 b.Property(sra => sra.DropoffTime);
-                b.Property(sra => sra.AssignedAt).IsRequired();
-                b.Property(sra => sra.Status).IsRequired().HasMaxLength(50);
+
+                b.Property(sra => sra.AssignedAt)
+                    .IsRequired();
+
+                b.Property(sra => sra.Status)
+                    .IsRequired()
+                    .HasMaxLength(50);
 
                 b.HasOne(sra => sra.Student)
                     .WithMany()
@@ -189,5 +245,4 @@ namespace vangoplus_server.Infrastructure.Data
             });
         }
     }
-
 }

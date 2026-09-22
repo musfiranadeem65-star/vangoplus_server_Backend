@@ -47,6 +47,25 @@ namespace vangoplus_server.Controllers
             return Ok(result);
         }
 
+        [HttpPost("change-password")]
+        public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordDto request)
+        {
+            try
+            {
+                await _handler.ChangePasswordAsync(request);
+                return NoContent();
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+
+        }
+
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] UserDto dto)
         {
@@ -59,6 +78,34 @@ namespace vangoplus_server.Controllers
         {
             await _handler.DeleteAsync(id);
             return NoContent();
+        }
+
+        [HttpGet("{id}/notification-preferences")]
+        public async Task<IActionResult> GetNotificationPreferences(int id)
+        {
+            var prefs = await _handler.GetNotificationPreferencesAsync(id);
+            if (prefs == null)
+                return NotFound(new { message = "User not found." });
+            return Ok(prefs);
+        }
+
+        [HttpPut("{id}/notification-preferences")]
+        public async Task<IActionResult> UpdateNotificationPreferences(int id, [FromBody] NotificationPreferencesDto dto)
+        {
+            try
+            {
+                await _handler.UpdateNotificationPreferencesAsync(id, dto);
+                var updated = await _handler.GetNotificationPreferencesAsync(id);
+                return Ok(updated);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+            catch (ArgumentNullException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
     }
 
