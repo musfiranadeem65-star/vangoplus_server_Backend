@@ -25,10 +25,18 @@ dotnet run -- classify "van kab aye gi"
 # pickup_time  (confidence 84.1%, matched by model)
 ```
 
+The endpoint requires a signed-in parent, so sign in first and send the token:
+
 ```bash
+TOKEN=$(curl -ks -X POST https://localhost:7270/api/User/login \
+  -H "Content-Type: application/json" \
+  -d '{"email":"parent@example.com","password":"your-password"}' \
+  | python3 -c "import sys,json;print(json.load(sys.stdin)['token'])")
+
 curl -k -X POST https://localhost:7270/api/chat \
   -H "Content-Type: application/json" \
-  -d '{"parentUserId":1,"message":"van kab aye gi"}'
+  -H "Authorization: Bearer $TOKEN" \
+  -d '{"message":"van kab aye gi"}'
 ```
 
 ## Showing the supervisor how the model was trained
@@ -91,8 +99,9 @@ Where the database holds nothing, the bot says so instead of inventing data:
 | `Driver` has no vehicle fields | says vehicle numbers aren't recorded |
 | `Subscription` has no end date | computes +1 month, labels it "around" |
 
-`parentUserId` is sent in the request body because frontend auth is still mocked. With real
-auth it comes from the session and the body field goes away.
+Which parent is asking comes from the signed-in token, not from the request body. There is
+deliberately no parent id field in the request: if there were, any signed-in parent could read
+another family's pickup times by changing one number. See `AUTHENTICATION.md`.
 
 ## Results
 

@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using vangoplus_server.Application.DTOs;
 namespace vangoplus_server.Controllers;
@@ -6,6 +7,7 @@ using IRouteHandler = vangoplus_server.Application.Interfaces.IRouteHandler;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 public class RouteController : ControllerBase
 {
     private readonly IRouteHandler _handler;

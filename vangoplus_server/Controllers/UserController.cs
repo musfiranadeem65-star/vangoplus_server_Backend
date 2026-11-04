@@ -1,3 +1,6 @@
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
+using vangoplus_server.Application.Auth;
 using Microsoft.AspNetCore.Mvc;
 using vangoplus_server.Application.DTOs;
 using vangoplus_server.Application.Interfaces;
@@ -6,6 +9,7 @@ namespace vangoplus_server.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class UserController : ControllerBase
     {
         private readonly IUserHandler _handler;
@@ -30,14 +34,23 @@ namespace vangoplus_server.Controllers
             return Ok(item);
         }
 
+        // The public signup form. Anyone may create a parent account; the
+        // role is forced below so a caller cannot register themselves as an
+        // administrator.
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] UserCreateRequest request)
         {
-            var dto = new UserDto { Name = request.Name, Email = request.Email, Phone = request.Phone, City = request.City, Role = request.Role, Status = request.Status };
+            // Self-registration always produces a Parent. Staff accounts are
+            // created by an administrator, not by this endpoint.
+            var role = User.IsAdmin() ? request.Role : "Parent";
+
+            var dto = new UserDto { Name = request.Name, Email = request.Email, Phone = request.Phone, City = request.City, Role = role, Status = request.Status };
             var created = await _handler.CreateAsync(dto, request.Password);
             return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
         }
 
+        [AllowAnonymous]
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequestDto request)
         {
@@ -50,6 +63,21 @@ namespace vangoplus_server.Controllers
         [HttpPost("change-password")]
         public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordDto request)
         {
+            if (request is null)
+                return BadRequest(new { message = "A request body is required." });
+
+            // Being signed in is not enough: it has to be your own account.
+            // Without this, any parent could change any other parent's
+            // password as long as they knew the email address.
+            if (!User.IsAdmin())
+            {
+                var signedInEmail = User.FindFirstValue(ClaimTypes.Email);
+
+                if (signedInEmail is null ||
+                    !string.Equals(signedInEmail, request.Email, StringComparison.OrdinalIgnoreCase))
+                    return Forbid();
+            }
+
             try
             {
                 await _handler.ChangePasswordAsync(request);

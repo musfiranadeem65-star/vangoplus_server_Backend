@@ -1,9 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using vangoplus_server.Infrastructure.Data;
 using vangoplus_server.Domain.Entities;
 using vangoplus_server.Application.Interfaces;
 using vangoplus_server.Application.Services;
 using vangoplus_server.Application.Handlers;
+using vangoplus_server.Application.Auth;
 using vangoplus_server.Application.Chat;
 using IRouteHandler = vangoplus_server.Application.Interfaces.IRouteHandler;
 using RouteHandler = vangoplus_server.Application.Handlers.RouteHandler;
@@ -62,11 +66,65 @@ builder.Services.AddCors(options =>
         });
 });
 
-// Configure EF Core with PostgreSQL
+// Configure EF Core with PostgreSQL.
+//
+// The connection string is a secret, because it carries the database
+// password, so it is not committed. Copy
+// appsettings.Development.json.example to appsettings.Development.json and
+// put your own password in it, or set the ConnectionStrings__DefaultConnection
+// environment variable.
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+if (string.IsNullOrWhiteSpace(connectionString))
+    throw new InvalidOperationException(
+        "No database connection string. Copy " +
+        "appsettings.Development.json.example to appsettings.Development.json " +
+        "and fill in your database password, or set the " +
+        "ConnectionStrings__DefaultConnection environment variable."
+    );
+
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(
-        builder.Configuration.GetConnectionString("DefaultConnection")
-    ));
+    options.UseNpgsql(connectionString));
+
+// ---------------------------------------------------------
+// Authentication
+//
+// Every controller requires a signed-in caller (see the [Authorize]
+// attributes). Sign-in and registration are the two exceptions, and they
+// say so with [AllowAnonymous].
+// ---------------------------------------------------------
+
+var jwtSettings = JwtSettings.Load(
+    builder.Configuration,
+    builder.Environment.IsDevelopment()
+);
+
+builder.Services.AddSingleton(jwtSettings);
+builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
+
+builder.Services
+    .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = jwtSettings.Issuer,
+            ValidAudience = jwtSettings.Audience,
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(jwtSettings.Key)
+            ),
+
+            // The default allows five minutes of drift, which keeps an
+            // expired token working for five more minutes.
+            ClockSkew = TimeSpan.Zero
+        };
+    });
+
+builder.Services.AddAuthorization();
 
 // Application services & handlers
 builder.Services.AddScoped<IUserService, UserService>();
@@ -127,6 +185,9 @@ app.UseCors("AllowFrontend");
 // Serve static files from wwwroot (uploads)
 app.UseStaticFiles();
 
+// Order matters: authentication works out who the caller is, then
+// authorization decides whether they may do this.
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

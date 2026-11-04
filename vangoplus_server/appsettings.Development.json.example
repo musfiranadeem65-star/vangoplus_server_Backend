@@ -1,0 +1,14 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Host=localhost;Database=vangoplus;Username=postgres;Password=YOUR_DATABASE_PASSWORD"
+  },
+  "Jwt": {
+    "Key": "replace-this-with-a-long-random-string-of-at-least-32-characters"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  }
+}

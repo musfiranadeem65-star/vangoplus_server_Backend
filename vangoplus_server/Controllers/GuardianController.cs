@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using System.IO;
@@ -10,6 +11,7 @@ namespace vangoplus_server.Controllers
 {
     [ApiController]
     [Route("api/students/{studentId}/guardians")]
+    [Authorize]
     public class GuardianController : ControllerBase
     {
         private readonly IGuardianHandler _handler;

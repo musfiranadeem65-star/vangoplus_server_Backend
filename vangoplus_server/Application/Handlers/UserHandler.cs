@@ -1,3 +1,4 @@
+using vangoplus_server.Application.Auth;
 using vangoplus_server.Application.DTOs;
 using vangoplus_server.Application.Interfaces;
 
@@ -6,10 +7,12 @@ namespace vangoplus_server.Application.Handlers
     public class UserHandler : IUserHandler
     {
         private readonly IUserService _service;
+        private readonly IJwtTokenService _tokens;
 
-public UserHandler(IUserService service)
+public UserHandler(IUserService service, IJwtTokenService tokens)
 {
     _service = service;
+    _tokens = tokens;
 }
 
 public async Task<UserDto> CreateAsync(UserDto dto, string passwordPlain)
@@ -83,7 +86,8 @@ public async Task<LoginResponseDto?> LoginAsync(LoginRequestDto request)
         Role = user.Role,
         Phone = user.Phone,
         City = user.City,
-        Status = user.Status
+        Status = user.Status,
+        Token = _tokens.CreateToken(user.Id, user.Name, user.Email, user.Role)
     };
 }
 

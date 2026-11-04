@@ -23,10 +23,10 @@ namespace vangoplus_server.Application.Handlers
             _escalation = escalation;
         }
 
-        public async Task<ChatResponseDto> AskAsync(ChatRequestDto dto)
+        public async Task<ChatResponseDto> AskAsync(int parentUserId, ChatRequestDto dto)
         {
-            if (dto.ParentUserId <= 0)
-                throw new ArgumentException("ParentUserId must be greater than zero.", nameof(dto.ParentUserId));
+            if (parentUserId <= 0)
+                throw new ArgumentException("A signed-in parent is required.", nameof(parentUserId));
             if (string.IsNullOrWhiteSpace(dto.Message))
                 throw new ArgumentException("Message is required.", nameof(dto.Message));
             if (dto.Message.Length > 500)
@@ -43,7 +43,7 @@ namespace vangoplus_server.Application.Handlers
                     Escalated = false
                 };
 
-            var ctx = await _context.LoadAsync(dto.ParentUserId);
+            var ctx = await _context.LoadAsync(parentUserId);
 
             var answer = _escalation.IsEscalation(result.Intent)
                 ? await _escalation.HandleAsync(result.Intent, dto.Message, ctx)

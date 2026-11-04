@@ -9,5 +9,11 @@ namespace vangoplus_server.Application.DTOs
         public string? Phone { get; set; }
         public string? City { get; set; }
         public string? Status { get; set; }
+
+        /// <summary>
+        /// The signed token the client must send back as
+        /// Authorization: Bearer &lt;token&gt; on every later request.
+        /// </summary>
+        public string Token { get; set; } = null!;
     }
 }

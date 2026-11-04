@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+# Local secrets: the database password and the token signing key.
+# Copy appsettings.Development.json.example to appsettings.Development.json
+# and fill in your own values. This file is never committed.
+appsettings.Development.json

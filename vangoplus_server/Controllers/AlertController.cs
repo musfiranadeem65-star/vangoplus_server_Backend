@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using vangoplus_server.Application.DTOs;
 using vangoplus_server.Application.Interfaces;
@@ -6,6 +7,7 @@ namespace vangoplus_server.Controllers
 {
     [ApiController]
     [Route("api")]
+    [Authorize]
     public class AlertController : ControllerBase
     {
         private readonly IAlertHandler _handler;

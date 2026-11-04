@@ -1,10 +1,9 @@
 using Microsoft.EntityFrameworkCore;
+using vangoplus_server.Application.Auth;
 using vangoplus_server.Application.DTOs;
 using vangoplus_server.Application.Interfaces;
 using vangoplus_server.Domain.Entities;
 using vangoplus_server.Infrastructure.Data;
-using System.Security.Cryptography;
-using System.Text;
 
 namespace vangoplus_server.Application.Services
 {
@@ -118,14 +117,22 @@ public UserService(AppDbContext db)
             if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(passwordPlain))
                 return null;
 
-var normalizedEmail = email.Trim().ToLower();
-            var u = await _db.Users.AsNoTracking().FirstOrDefaultAsync(x => x.Email.ToLower() == normalizedEmail);
+            var normalizedEmail = email.Trim().ToLower();
+
+            // Tracked, not AsNoTracking: a successful sign-in may rewrite an
+            // old-style hash, and that write needs a tracked entity.
+            var u = await _db.Users.FirstOrDefaultAsync(x => x.Email.ToLower() == normalizedEmail);
             if (u == null) return null;
 
-var hash = HashPassword(passwordPlain);
-            if (u.PasswordHash != hash) return null;
+            if (!PasswordHasher.Verify(passwordPlain, u.PasswordHash)) return null;
 
-return new UserDto { Id = u.Id, Name = u.Name, Email = u.Email, Phone = u.Phone, City = u.City, Role = u.Role, Status = u.Status };
+            if (PasswordHasher.NeedsUpgrade(u.PasswordHash))
+            {
+                u.PasswordHash = PasswordHasher.Hash(passwordPlain);
+                await _db.SaveChangesAsync();
+            }
+
+            return new UserDto { Id = u.Id, Name = u.Name, Email = u.Email, Phone = u.Phone, City = u.City, Role = u.Role, Status = u.Status };
         }
 
         public async Task ChangePasswordAsync(ChangePasswordDto dto)
@@ -138,19 +145,15 @@ return new UserDto { Id = u.Id, Name = u.Name, Email = u.Email, Phone = u.Phone,
             var u = await _db.Users.FirstOrDefaultAsync(x => x.Email.ToLower() == normalizedEmail);
             if (u == null) throw new InvalidOperationException("User not found.");
 
-            var currentHash = HashPassword(dto.CurrentPassword);
-            if (u.PasswordHash != currentHash) throw new InvalidOperationException("Current password is incorrect.");
+            if (!PasswordHasher.Verify(dto.CurrentPassword, u.PasswordHash))
+                throw new InvalidOperationException("Current password is incorrect.");
 
             u.PasswordHash = HashPassword(dto.NewPassword);
             await _db.SaveChangesAsync();
         }
 
-        private static string HashPassword(string password)
-        {
-            using var sha = SHA256.Create();
-            var bytes = sha.ComputeHash(Encoding.UTF8.GetBytes(password));
-            return Convert.ToBase64String(bytes);
-        }
+        private static string HashPassword(string password) =>
+            PasswordHasher.Hash(password);
 
         public async Task<NotificationPreferencesDto?> GetNotificationPreferencesAsync(int id)
         {
