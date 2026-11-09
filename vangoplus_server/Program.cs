@@ -157,6 +157,13 @@ builder.Services.AddScoped<IAlertHandler, AlertHandler>();
 builder.Services.AddScoped<IStudentRouteAssignmentService, StudentRouteAssignmentService>();
 builder.Services.AddScoped<IStudentRouteAssignmentHandler, StudentRouteAssignmentHandler>();
 
+// One child's route, driver and stops, for the parent's schedule screen
+builder.Services.AddScoped<IStudentScheduleService, StudentScheduleService>();
+
+// Pickup and drop records
+builder.Services.AddScoped<ITripRecordService, TripRecordService>();
+builder.Services.AddScoped<ITripRecordHandler, TripRecordHandler>();
+
 // School settings
 builder.Services.AddScoped<ISchoolSettingService, SchoolSettingService>();
 builder.Services.AddScoped<ISchoolSettingHandler, SchoolSettingHandler>();

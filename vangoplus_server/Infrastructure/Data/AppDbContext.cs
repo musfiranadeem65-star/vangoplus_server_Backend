@@ -23,6 +23,7 @@ namespace vangoplus_server.Infrastructure.Data
         public DbSet<Alert> Alerts { get; set; } = null!;
         public DbSet<StudentRouteAssignment> StudentRouteAssignments { get; set; } = null!;
         public DbSet<SchoolSetting> SchoolSettings { get; set; } = null!;
+        public DbSet<TripRecord> TripRecords { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -242,6 +243,46 @@ namespace vangoplus_server.Infrastructure.Data
                     .WithMany()
                     .HasForeignKey(sra => sra.RouteId)
                     .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            modelBuilder.Entity<TripRecord>(b =>
+            {
+                b.HasKey(t => t.Id);
+
+                b.Property(t => t.Kind)
+                    .IsRequired()
+                    .HasMaxLength(20);
+
+                b.Property(t => t.OccurredAt)
+                    .IsRequired();
+
+                b.Property(t => t.OnDate)
+                    .IsRequired();
+
+                b.Property(t => t.RecordedByUserId)
+                    .IsRequired();
+
+                b.Property(t => t.Note)
+                    .HasMaxLength(300);
+
+                // One boarding and one drop per child per day. Without this a
+                // double tap on the button writes the same event twice, and
+                // the parent sees two different pickup times for one morning.
+                b.HasIndex(t => new { t.StudentId, t.OnDate, t.Kind })
+                    .IsUnique();
+
+                b.HasOne(t => t.Student)
+                    .WithMany()
+                    .HasForeignKey(t => t.StudentId)
+                    .OnDelete(DeleteBehavior.Cascade);
+
+                // Restrict, not Cascade: these rows are a record of what
+                // happened. Deleting a route must not quietly erase the
+                // history of children who travelled on it.
+                b.HasOne(t => t.Route)
+                    .WithMany()
+                    .HasForeignKey(t => t.RouteId)
+                    .OnDelete(DeleteBehavior.Restrict);
             });
         }
     }

@@ -183,6 +183,12 @@ namespace vangoplus_server.Migrations
                     b.Property<TimeSpan?>("ArrivalTime")
                         .HasColumnType("interval");
 
+                    b.Property<double?>("Latitude")
+                        .HasColumnType("double precision");
+
+                    b.Property<double?>("Longitude")
+                        .HasColumnType("double precision");
+
                     b.Property<int>("OrderIndex")
                         .HasColumnType("integer");
 
@@ -417,6 +423,48 @@ namespace vangoplus_server.Migrations
                     b.ToTable("SubscriptionPlans");
                 });
 
+            modelBuilder.Entity("vangoplus_server.Domain.Entities.TripRecord", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Kind")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
+
+                    b.Property<string>("Note")
+                        .HasMaxLength(300)
+                        .HasColumnType("character varying(300)");
+
+                    b.Property<DateTime>("OccurredAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateOnly>("OnDate")
+                        .HasColumnType("date");
+
+                    b.Property<int>("RecordedByUserId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("RouteId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("StudentId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RouteId");
+
+                    b.HasIndex("StudentId", "OnDate", "Kind")
+                        .IsUnique();
+
+                    b.ToTable("TripRecords");
+                });
+
             modelBuilder.Entity("vangoplus_server.Domain.Entities.User", b =>
                 {
                     b.Property<int>("Id")
@@ -583,6 +631,25 @@ namespace vangoplus_server.Migrations
                     b.Navigation("SubscriptionPlan");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("vangoplus_server.Domain.Entities.TripRecord", b =>
+                {
+                    b.HasOne("vangoplus_server.Domain.Entities.Route", "Route")
+                        .WithMany()
+                        .HasForeignKey("RouteId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("vangoplus_server.Domain.Entities.Student", "Student")
+                        .WithMany()
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Route");
+
+                    b.Navigation("Student");
                 });
 
             modelBuilder.Entity("vangoplus_server.Domain.Entities.Driver", b =>

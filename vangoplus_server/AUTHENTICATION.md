@@ -76,7 +76,15 @@ without one, because a key that everybody can read is the same as no key at all.
 
 `[Authorize]` means **signed in**. It does not yet mean **allowed to see this
 particular row**. A signed-in parent can still request another parent's records by id on
-most endpoints. The chatbot is the exception: it is scoped to the caller.
+most endpoints.
+
+Three places are already scoped to the caller and are the pattern to copy:
+
+| Endpoint | How it is scoped |
+| --- | --- |
+| `POST /api/chat` | parent id comes from the token, never the body |
+| `GET /api/trip-records/my-children` | same, and the roster is staff only |
+| `GET /api/students/{id}/schedule` | a parent may only read their own child |
 
 The next step is per-row checks, and `[Authorize(Roles = "Admin")]` on the management
 endpoints. That was left out of this change on purpose, because the parent portal reads

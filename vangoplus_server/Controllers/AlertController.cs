@@ -49,14 +49,6 @@ namespace vangoplus_server.Controllers
             return NoContent();
         }
 
-        [HttpGet("students/{studentId}/schedule")]
-        public async Task<IActionResult> GetSchedule(int studentId)
-        {
-            // This endpoint is for future implementation
-            // Returns schedule information for a student
-            return Ok(new { message = "Schedule endpoint for student " + studentId });
-        }
-
         public class MarkAsReadRequest
         {
             public bool IsRead { get; set; }

@@ -36,7 +36,9 @@ namespace vangoplus_server.Application.Services
                     RouteId = entity.Id,
                     StopName = rs.StopName,
                     ArrivalTime = rs.ArrivalTime,
-                    OrderIndex = rs.OrderIndex
+                    OrderIndex = rs.OrderIndex,
+                    Latitude = rs.Latitude,
+                    Longitude = rs.Longitude
                 }).ToList();
 
                 _db.RouteStops.AddRange(stops);
@@ -69,7 +71,9 @@ namespace vangoplus_server.Application.Services
                     {
                         StopName = rs.StopName,
                         ArrivalTime = rs.ArrivalTime,
-                        OrderIndex = rs.OrderIndex
+                        OrderIndex = rs.OrderIndex,
+                        Latitude = rs.Latitude,
+                        Longitude = rs.Longitude
                     }).OrderBy(rs => rs.OrderIndex).ToList()
                 })
                 .ToListAsync();
@@ -94,7 +98,9 @@ namespace vangoplus_server.Application.Services
                 {
                     StopName = rs.StopName,
                     ArrivalTime = rs.ArrivalTime,
-                    OrderIndex = rs.OrderIndex
+                    OrderIndex = rs.OrderIndex,
+                    Latitude = rs.Latitude,
+                    Longitude = rs.Longitude
                 }).OrderBy(rs => rs.OrderIndex).ToList()
             };
         }
@@ -126,7 +132,9 @@ namespace vangoplus_server.Application.Services
                         RouteId = id,
                         StopName = rs.StopName,
                         ArrivalTime = rs.ArrivalTime,
-                        OrderIndex = rs.OrderIndex
+                        OrderIndex = rs.OrderIndex,
+                        Latitude = rs.Latitude,
+                        Longitude = rs.Longitude
                     }).ToList();
 
                     _db.RouteStops.AddRange(stops);
